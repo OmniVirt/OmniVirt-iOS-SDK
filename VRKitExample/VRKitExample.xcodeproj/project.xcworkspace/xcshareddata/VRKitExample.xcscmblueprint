@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "DF95B07A806E37EFE84232F7E9312EF2E6000EC6",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "429A3FBDF05E573A491942E603981FA867DBE16D" : 9223372036854775807,
+    "DF95B07A806E37EFE84232F7E9312EF2E6000EC6" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "93E878E3-FBEB-473B-8480-FE47055D973D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "429A3FBDF05E573A491942E603981FA867DBE16D" : "VRKit-iOS\/",
+    "DF95B07A806E37EFE84232F7E9312EF2E6000EC6" : "iOS-VR-Example\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "VRKitExample",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "VRKitExample\/VRKitExample.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "bitbucket.org:socialnationinc\/vrkit-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "429A3FBDF05E573A491942E603981FA867DBE16D"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:OmniVirt\/iOS-VR-Example.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "DF95B07A806E37EFE84232F7E9312EF2E6000EC6"
+    }
+  ]
+}

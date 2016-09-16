@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6F09D4AB1D8A42AE000EE737 /* VRKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6F09D4AA1D8A42AE000EE737 /* VRKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6F09D4AC1D8A42B4000EE737 /* VRKit.framework in Resources */ = {isa = PBXBuildFile; fileRef = 6F09D4AA1D8A42AE000EE737 /* VRKit.framework */; };
-		6F09D4AD1D8A42C9000EE737 /* VRKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F09D4AA1D8A42AE000EE737 /* VRKit.framework */; };
+		6F71579A1D8C830B00977816 /* VRKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6F7157991D8C830B00977816 /* VRKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6F71579B1D8C831300977816 /* VRKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F7157991D8C830B00977816 /* VRKit.framework */; };
+		6F71579C1D8C831500977816 /* VRKit.framework in Resources */ = {isa = PBXBuildFile; fileRef = 6F7157991D8C830B00977816 /* VRKit.framework */; };
 		6F9F7B6F1D889AA3001EF3FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9F7B6E1D889AA3001EF3FF /* AppDelegate.swift */; };
 		6F9F7B711D889AA3001EF3FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9F7B701D889AA3001EF3FF /* ViewController.swift */; };
 		6F9F7B741D889AA3001EF3FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F9F7B721D889AA3001EF3FF /* Main.storyboard */; };
@@ -43,7 +43,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				6F09D4AB1D8A42AE000EE737 /* VRKit.framework in Embed Frameworks */,
+				6F71579A1D8C830B00977816 /* VRKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,7 +51,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		6F09D4AA1D8A42AE000EE737 /* VRKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VRKit.framework; sourceTree = "<group>"; };
+		6F7157991D8C830B00977816 /* VRKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VRKit.framework; sourceTree = "<group>"; };
 		6F9F7B6B1D889AA3001EF3FF /* VRKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VRKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F9F7B6E1D889AA3001EF3FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6F9F7B701D889AA3001EF3FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,7 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F09D4AD1D8A42C9000EE737 /* VRKit.framework in Frameworks */,
+				6F71579B1D8C831300977816 /* VRKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -148,7 +148,7 @@
 		6F9F7B9C1D889ABE001EF3FF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6F09D4AA1D8A42AE000EE737 /* VRKit.framework */,
+				6F7157991D8C830B00977816 /* VRKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -264,7 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F09D4AC1D8A42B4000EE737 /* VRKit.framework in Resources */,
+				6F71579C1D8C831500977816 /* VRKit.framework in Resources */,
 				6F9F7B791D889AA3001EF3FF /* LaunchScreen.storyboard in Resources */,
 				6F9F7B761D889AA3001EF3FF /* Assets.xcassets in Resources */,
 				6F9F7B741D889AA3001EF3FF /* Main.storyboard in Resources */,

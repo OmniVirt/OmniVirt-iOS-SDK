@@ -37,7 +37,7 @@ class ViewController: UIViewController, VRPlayerDelegate {
     }
     
     func rotate(_ notification: Notification) {
-        if (UIDeviceOrientationIsPortrait(UIDevice.current.orientation))
+        if (UIDevice.current.orientation == UIDeviceOrientation.faceUp || UIDeviceOrientationIsPortrait(UIDevice.current.orientation))
         {
             if (isExpanded) {
                 logHeight.constant = 0.0;
@@ -94,7 +94,7 @@ class ViewController: UIViewController, VRPlayerDelegate {
         log.text! += "Expanded\n"
         isExpanded = true;
         
-        if (UIDeviceOrientationIsPortrait(UIDevice.current.orientation))
+        if (UIDevice.current.orientation == UIDeviceOrientation.faceUp || UIDeviceOrientationIsPortrait(UIDevice.current.orientation))
         {
             logHeight.constant = 0.0
         }
@@ -103,7 +103,7 @@ class ViewController: UIViewController, VRPlayerDelegate {
         log.text! += "Collapsed\n"
         isExpanded = false;
         
-        if (UIDeviceOrientationIsPortrait(UIDevice.current.orientation))
+        if (UIDevice.current.orientation == UIDeviceOrientation.faceUp || UIDeviceOrientationIsPortrait(UIDevice.current.orientation))
         {
             logHeight.constant = 380.0
         }
@@ -114,7 +114,7 @@ class ViewController: UIViewController, VRPlayerDelegate {
     func playerLongitudeChanged(_ player: VRPlayer, withLongitude value:Double) {
         // log.text! += "Longitude changed to " + String(value) + "\n"
     }
-    func playerDidSwitched(_ player: VRPlayer, withScene name: String) {
+    func playerDidSwitched(_ player: VRPlayer, withScene name: String, withHistory history: [String]) {
         log.text! += "Switched to " + name + "\n"
     }
 }
