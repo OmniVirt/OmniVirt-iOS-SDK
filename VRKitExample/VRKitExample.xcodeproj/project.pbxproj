@@ -7,43 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6F71579A1D8C830B00977816 /* VRKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6F7157991D8C830B00977816 /* VRKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		6F71579B1D8C831300977816 /* VRKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F7157991D8C830B00977816 /* VRKit.framework */; };
-		6F71579C1D8C831500977816 /* VRKit.framework in Resources */ = {isa = PBXBuildFile; fileRef = 6F7157991D8C830B00977816 /* VRKit.framework */; };
-		6F9F7B6F1D889AA3001EF3FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9F7B6E1D889AA3001EF3FF /* AppDelegate.swift */; };
-		6F9F7B711D889AA3001EF3FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9F7B701D889AA3001EF3FF /* ViewController.swift */; };
-		6F9F7B741D889AA3001EF3FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F9F7B721D889AA3001EF3FF /* Main.storyboard */; };
-		6F9F7B761D889AA3001EF3FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F9F7B751D889AA3001EF3FF /* Assets.xcassets */; };
-		6F9F7B791D889AA3001EF3FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F9F7B771D889AA3001EF3FF /* LaunchScreen.storyboard */; };
-		6F9F7B841D889AA4001EF3FF /* VRKitExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9F7B831D889AA4001EF3FF /* VRKitExampleTests.swift */; };
-		6F9F7B8F1D889AA4001EF3FF /* VRKitExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F9F7B8E1D889AA4001EF3FF /* VRKitExampleUITests.swift */; };
+		6F597FA91D8CA81C00420E0B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F597FA81D8CA81C00420E0B /* AppDelegate.swift */; };
+		6F597FAB1D8CA81C00420E0B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F597FAA1D8CA81C00420E0B /* ViewController.swift */; };
+		6F597FAE1D8CA81C00420E0B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F597FAC1D8CA81C00420E0B /* Main.storyboard */; };
+		6F597FB01D8CA81C00420E0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6F597FAF1D8CA81C00420E0B /* Assets.xcassets */; };
+		6F597FB31D8CA81C00420E0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6F597FB11D8CA81C00420E0B /* LaunchScreen.storyboard */; };
+		6F597FBE1D8CA81C00420E0B /* VRKitExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F597FBD1D8CA81C00420E0B /* VRKitExampleTests.swift */; };
+		6F597FC91D8CA81C00420E0B /* VRKitExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F597FC81D8CA81C00420E0B /* VRKitExampleUITests.swift */; };
+		6F597FD71D8CA91100420E0B /* VRKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F597FD61D8CA91100420E0B /* VRKit.framework */; };
+		6F597FD81D8CA91100420E0B /* VRKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6F597FD61D8CA91100420E0B /* VRKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6F597FDA1D8CA92000420E0B /* VRKit.framework in Resources */ = {isa = PBXBuildFile; fileRef = 6F597FD61D8CA91100420E0B /* VRKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		6F9F7B801D889AA4001EF3FF /* PBXContainerItemProxy */ = {
+		6F597FBA1D8CA81C00420E0B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6F9F7B631D889AA3001EF3FF /* Project object */;
+			containerPortal = 6F597F9D1D8CA81C00420E0B /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6F9F7B6A1D889AA3001EF3FF;
+			remoteGlobalIDString = 6F597FA41D8CA81C00420E0B;
 			remoteInfo = VRKitExample;
 		};
-		6F9F7B8B1D889AA4001EF3FF /* PBXContainerItemProxy */ = {
+		6F597FC51D8CA81C00420E0B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 6F9F7B631D889AA3001EF3FF /* Project object */;
+			containerPortal = 6F597F9D1D8CA81C00420E0B /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 6F9F7B6A1D889AA3001EF3FF;
+			remoteGlobalIDString = 6F597FA41D8CA81C00420E0B;
 			remoteInfo = VRKitExample;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		6F09D49E1D8A3AF5000EE737 /* Embed Frameworks */ = {
+		6F597FD91D8CA91100420E0B /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				6F71579A1D8C830B00977816 /* VRKit.framework in Embed Frameworks */,
+				6F597FD81D8CA91100420E0B /* VRKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,39 +51,39 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		6F7157991D8C830B00977816 /* VRKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VRKit.framework; sourceTree = "<group>"; };
-		6F9F7B6B1D889AA3001EF3FF /* VRKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VRKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6F9F7B6E1D889AA3001EF3FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6F9F7B701D889AA3001EF3FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		6F9F7B731D889AA3001EF3FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		6F9F7B751D889AA3001EF3FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		6F9F7B781D889AA3001EF3FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		6F9F7B7A1D889AA3001EF3FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6F9F7B7F1D889AA4001EF3FF /* VRKitExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VRKitExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6F9F7B831D889AA4001EF3FF /* VRKitExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VRKitExampleTests.swift; sourceTree = "<group>"; };
-		6F9F7B851D889AA4001EF3FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6F9F7B8A1D889AA4001EF3FF /* VRKitExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VRKitExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6F9F7B8E1D889AA4001EF3FF /* VRKitExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VRKitExampleUITests.swift; sourceTree = "<group>"; };
-		6F9F7B901D889AA4001EF3FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F597FA51D8CA81C00420E0B /* VRKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VRKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F597FA81D8CA81C00420E0B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6F597FAA1D8CA81C00420E0B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6F597FAD1D8CA81C00420E0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6F597FAF1D8CA81C00420E0B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6F597FB21D8CA81C00420E0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6F597FB41D8CA81C00420E0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F597FB91D8CA81C00420E0B /* VRKitExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VRKitExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F597FBD1D8CA81C00420E0B /* VRKitExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VRKitExampleTests.swift; sourceTree = "<group>"; };
+		6F597FBF1D8CA81C00420E0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F597FC41D8CA81C00420E0B /* VRKitExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VRKitExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F597FC81D8CA81C00420E0B /* VRKitExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VRKitExampleUITests.swift; sourceTree = "<group>"; };
+		6F597FCA1D8CA81C00420E0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6F597FD61D8CA91100420E0B /* VRKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = VRKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		6F9F7B681D889AA3001EF3FF /* Frameworks */ = {
+		6F597FA21D8CA81C00420E0B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F71579B1D8C831300977816 /* VRKit.framework in Frameworks */,
+				6F597FD71D8CA91100420E0B /* VRKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6F9F7B7C1D889AA4001EF3FF /* Frameworks */ = {
+		6F597FB61D8CA81C00420E0B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6F9F7B871D889AA4001EF3FF /* Frameworks */ = {
+		6F597FC11D8CA81C00420E0B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -93,77 +93,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6F9F7B621D889AA3001EF3FF = {
+		6F597F9C1D8CA81C00420E0B = {
 			isa = PBXGroup;
 			children = (
-				6F9F7B6D1D889AA3001EF3FF /* VRKitExample */,
-				6F9F7B821D889AA4001EF3FF /* VRKitExampleTests */,
-				6F9F7B8D1D889AA4001EF3FF /* VRKitExampleUITests */,
-				6F9F7B6C1D889AA3001EF3FF /* Products */,
-				6F9F7B9C1D889ABE001EF3FF /* Frameworks */,
+				6F597FD61D8CA91100420E0B /* VRKit.framework */,
+				6F597FA71D8CA81C00420E0B /* VRKitExample */,
+				6F597FBC1D8CA81C00420E0B /* VRKitExampleTests */,
+				6F597FC71D8CA81C00420E0B /* VRKitExampleUITests */,
+				6F597FA61D8CA81C00420E0B /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		6F9F7B6C1D889AA3001EF3FF /* Products */ = {
+		6F597FA61D8CA81C00420E0B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6F9F7B6B1D889AA3001EF3FF /* VRKitExample.app */,
-				6F9F7B7F1D889AA4001EF3FF /* VRKitExampleTests.xctest */,
-				6F9F7B8A1D889AA4001EF3FF /* VRKitExampleUITests.xctest */,
+				6F597FA51D8CA81C00420E0B /* VRKitExample.app */,
+				6F597FB91D8CA81C00420E0B /* VRKitExampleTests.xctest */,
+				6F597FC41D8CA81C00420E0B /* VRKitExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		6F9F7B6D1D889AA3001EF3FF /* VRKitExample */ = {
+		6F597FA71D8CA81C00420E0B /* VRKitExample */ = {
 			isa = PBXGroup;
 			children = (
-				6F9F7B6E1D889AA3001EF3FF /* AppDelegate.swift */,
-				6F9F7B701D889AA3001EF3FF /* ViewController.swift */,
-				6F9F7B721D889AA3001EF3FF /* Main.storyboard */,
-				6F9F7B751D889AA3001EF3FF /* Assets.xcassets */,
-				6F9F7B771D889AA3001EF3FF /* LaunchScreen.storyboard */,
-				6F9F7B7A1D889AA3001EF3FF /* Info.plist */,
+				6F597FA81D8CA81C00420E0B /* AppDelegate.swift */,
+				6F597FAA1D8CA81C00420E0B /* ViewController.swift */,
+				6F597FAC1D8CA81C00420E0B /* Main.storyboard */,
+				6F597FAF1D8CA81C00420E0B /* Assets.xcassets */,
+				6F597FB11D8CA81C00420E0B /* LaunchScreen.storyboard */,
+				6F597FB41D8CA81C00420E0B /* Info.plist */,
 			);
 			path = VRKitExample;
 			sourceTree = "<group>";
 		};
-		6F9F7B821D889AA4001EF3FF /* VRKitExampleTests */ = {
+		6F597FBC1D8CA81C00420E0B /* VRKitExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				6F9F7B831D889AA4001EF3FF /* VRKitExampleTests.swift */,
-				6F9F7B851D889AA4001EF3FF /* Info.plist */,
+				6F597FBD1D8CA81C00420E0B /* VRKitExampleTests.swift */,
+				6F597FBF1D8CA81C00420E0B /* Info.plist */,
 			);
 			path = VRKitExampleTests;
 			sourceTree = "<group>";
 		};
-		6F9F7B8D1D889AA4001EF3FF /* VRKitExampleUITests */ = {
+		6F597FC71D8CA81C00420E0B /* VRKitExampleUITests */ = {
 			isa = PBXGroup;
 			children = (
-				6F9F7B8E1D889AA4001EF3FF /* VRKitExampleUITests.swift */,
-				6F9F7B901D889AA4001EF3FF /* Info.plist */,
+				6F597FC81D8CA81C00420E0B /* VRKitExampleUITests.swift */,
+				6F597FCA1D8CA81C00420E0B /* Info.plist */,
 			);
 			path = VRKitExampleUITests;
-			sourceTree = "<group>";
-		};
-		6F9F7B9C1D889ABE001EF3FF /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6F7157991D8C830B00977816 /* VRKit.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6F9F7B6A1D889AA3001EF3FF /* VRKitExample */ = {
+		6F597FA41D8CA81C00420E0B /* VRKitExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6F9F7B931D889AA4001EF3FF /* Build configuration list for PBXNativeTarget "VRKitExample" */;
+			buildConfigurationList = 6F597FCD1D8CA81C00420E0B /* Build configuration list for PBXNativeTarget "VRKitExample" */;
 			buildPhases = (
-				6F9F7B671D889AA3001EF3FF /* Sources */,
-				6F9F7B681D889AA3001EF3FF /* Frameworks */,
-				6F9F7B691D889AA3001EF3FF /* Resources */,
-				6F09D49E1D8A3AF5000EE737 /* Embed Frameworks */,
+				6F597FA11D8CA81C00420E0B /* Sources */,
+				6F597FA21D8CA81C00420E0B /* Frameworks */,
+				6F597FA31D8CA81C00420E0B /* Resources */,
+				6F597FD91D8CA91100420E0B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -171,75 +163,75 @@
 			);
 			name = VRKitExample;
 			productName = VRKitExample;
-			productReference = 6F9F7B6B1D889AA3001EF3FF /* VRKitExample.app */;
+			productReference = 6F597FA51D8CA81C00420E0B /* VRKitExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		6F9F7B7E1D889AA4001EF3FF /* VRKitExampleTests */ = {
+		6F597FB81D8CA81C00420E0B /* VRKitExampleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6F9F7B961D889AA4001EF3FF /* Build configuration list for PBXNativeTarget "VRKitExampleTests" */;
+			buildConfigurationList = 6F597FD01D8CA81C00420E0B /* Build configuration list for PBXNativeTarget "VRKitExampleTests" */;
 			buildPhases = (
-				6F9F7B7B1D889AA4001EF3FF /* Sources */,
-				6F9F7B7C1D889AA4001EF3FF /* Frameworks */,
-				6F9F7B7D1D889AA4001EF3FF /* Resources */,
+				6F597FB51D8CA81C00420E0B /* Sources */,
+				6F597FB61D8CA81C00420E0B /* Frameworks */,
+				6F597FB71D8CA81C00420E0B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6F9F7B811D889AA4001EF3FF /* PBXTargetDependency */,
+				6F597FBB1D8CA81C00420E0B /* PBXTargetDependency */,
 			);
 			name = VRKitExampleTests;
 			productName = VRKitExampleTests;
-			productReference = 6F9F7B7F1D889AA4001EF3FF /* VRKitExampleTests.xctest */;
+			productReference = 6F597FB91D8CA81C00420E0B /* VRKitExampleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		6F9F7B891D889AA4001EF3FF /* VRKitExampleUITests */ = {
+		6F597FC31D8CA81C00420E0B /* VRKitExampleUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6F9F7B991D889AA4001EF3FF /* Build configuration list for PBXNativeTarget "VRKitExampleUITests" */;
+			buildConfigurationList = 6F597FD31D8CA81C00420E0B /* Build configuration list for PBXNativeTarget "VRKitExampleUITests" */;
 			buildPhases = (
-				6F9F7B861D889AA4001EF3FF /* Sources */,
-				6F9F7B871D889AA4001EF3FF /* Frameworks */,
-				6F9F7B881D889AA4001EF3FF /* Resources */,
+				6F597FC01D8CA81C00420E0B /* Sources */,
+				6F597FC11D8CA81C00420E0B /* Frameworks */,
+				6F597FC21D8CA81C00420E0B /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				6F9F7B8C1D889AA4001EF3FF /* PBXTargetDependency */,
+				6F597FC61D8CA81C00420E0B /* PBXTargetDependency */,
 			);
 			name = VRKitExampleUITests;
 			productName = VRKitExampleUITests;
-			productReference = 6F9F7B8A1D889AA4001EF3FF /* VRKitExampleUITests.xctest */;
+			productReference = 6F597FC41D8CA81C00420E0B /* VRKitExampleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		6F9F7B631D889AA3001EF3FF /* Project object */ = {
+		6F597F9D1D8CA81C00420E0B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
-				ORGANIZATIONNAME = "Jatupon Sukkasem";
+				ORGANIZATIONNAME = "OmniVirt Team";
 				TargetAttributes = {
-					6F9F7B6A1D889AA3001EF3FF = {
+					6F597FA41D8CA81C00420E0B = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = V5R9MKAP9P;
 						ProvisioningStyle = Automatic;
 					};
-					6F9F7B7E1D889AA4001EF3FF = {
+					6F597FB81D8CA81C00420E0B = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = V5R9MKAP9P;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 6F9F7B6A1D889AA3001EF3FF;
+						TestTargetID = 6F597FA41D8CA81C00420E0B;
 					};
-					6F9F7B891D889AA4001EF3FF = {
+					6F597FC31D8CA81C00420E0B = {
 						CreatedOnToolsVersion = 8.0;
 						DevelopmentTeam = V5R9MKAP9P;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 6F9F7B6A1D889AA3001EF3FF;
+						TestTargetID = 6F597FA41D8CA81C00420E0B;
 					};
 				};
 			};
-			buildConfigurationList = 6F9F7B661D889AA3001EF3FF /* Build configuration list for PBXProject "VRKitExample" */;
+			buildConfigurationList = 6F597FA01D8CA81C00420E0B /* Build configuration list for PBXProject "VRKitExample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -247,38 +239,38 @@
 				en,
 				Base,
 			);
-			mainGroup = 6F9F7B621D889AA3001EF3FF;
-			productRefGroup = 6F9F7B6C1D889AA3001EF3FF /* Products */;
+			mainGroup = 6F597F9C1D8CA81C00420E0B;
+			productRefGroup = 6F597FA61D8CA81C00420E0B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6F9F7B6A1D889AA3001EF3FF /* VRKitExample */,
-				6F9F7B7E1D889AA4001EF3FF /* VRKitExampleTests */,
-				6F9F7B891D889AA4001EF3FF /* VRKitExampleUITests */,
+				6F597FA41D8CA81C00420E0B /* VRKitExample */,
+				6F597FB81D8CA81C00420E0B /* VRKitExampleTests */,
+				6F597FC31D8CA81C00420E0B /* VRKitExampleUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		6F9F7B691D889AA3001EF3FF /* Resources */ = {
+		6F597FA31D8CA81C00420E0B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F71579C1D8C831500977816 /* VRKit.framework in Resources */,
-				6F9F7B791D889AA3001EF3FF /* LaunchScreen.storyboard in Resources */,
-				6F9F7B761D889AA3001EF3FF /* Assets.xcassets in Resources */,
-				6F9F7B741D889AA3001EF3FF /* Main.storyboard in Resources */,
+				6F597FDA1D8CA92000420E0B /* VRKit.framework in Resources */,
+				6F597FB31D8CA81C00420E0B /* LaunchScreen.storyboard in Resources */,
+				6F597FB01D8CA81C00420E0B /* Assets.xcassets in Resources */,
+				6F597FAE1D8CA81C00420E0B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6F9F7B7D1D889AA4001EF3FF /* Resources */ = {
+		6F597FB71D8CA81C00420E0B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6F9F7B881D889AA4001EF3FF /* Resources */ = {
+		6F597FC21D8CA81C00420E0B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -288,59 +280,59 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		6F9F7B671D889AA3001EF3FF /* Sources */ = {
+		6F597FA11D8CA81C00420E0B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F9F7B711D889AA3001EF3FF /* ViewController.swift in Sources */,
-				6F9F7B6F1D889AA3001EF3FF /* AppDelegate.swift in Sources */,
+				6F597FAB1D8CA81C00420E0B /* ViewController.swift in Sources */,
+				6F597FA91D8CA81C00420E0B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6F9F7B7B1D889AA4001EF3FF /* Sources */ = {
+		6F597FB51D8CA81C00420E0B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F9F7B841D889AA4001EF3FF /* VRKitExampleTests.swift in Sources */,
+				6F597FBE1D8CA81C00420E0B /* VRKitExampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6F9F7B861D889AA4001EF3FF /* Sources */ = {
+		6F597FC01D8CA81C00420E0B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6F9F7B8F1D889AA4001EF3FF /* VRKitExampleUITests.swift in Sources */,
+				6F597FC91D8CA81C00420E0B /* VRKitExampleUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		6F9F7B811D889AA4001EF3FF /* PBXTargetDependency */ = {
+		6F597FBB1D8CA81C00420E0B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6F9F7B6A1D889AA3001EF3FF /* VRKitExample */;
-			targetProxy = 6F9F7B801D889AA4001EF3FF /* PBXContainerItemProxy */;
+			target = 6F597FA41D8CA81C00420E0B /* VRKitExample */;
+			targetProxy = 6F597FBA1D8CA81C00420E0B /* PBXContainerItemProxy */;
 		};
-		6F9F7B8C1D889AA4001EF3FF /* PBXTargetDependency */ = {
+		6F597FC61D8CA81C00420E0B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 6F9F7B6A1D889AA3001EF3FF /* VRKitExample */;
-			targetProxy = 6F9F7B8B1D889AA4001EF3FF /* PBXContainerItemProxy */;
+			target = 6F597FA41D8CA81C00420E0B /* VRKitExample */;
+			targetProxy = 6F597FC51D8CA81C00420E0B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		6F9F7B721D889AA3001EF3FF /* Main.storyboard */ = {
+		6F597FAC1D8CA81C00420E0B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6F9F7B731D889AA3001EF3FF /* Base */,
+				6F597FAD1D8CA81C00420E0B /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		6F9F7B771D889AA3001EF3FF /* LaunchScreen.storyboard */ = {
+		6F597FB11D8CA81C00420E0B /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				6F9F7B781D889AA3001EF3FF /* Base */,
+				6F597FB21D8CA81C00420E0B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -348,7 +340,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		6F9F7B911D889AA4001EF3FF /* Debug */ = {
+		6F597FCB1D8CA81C00420E0B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -398,7 +390,7 @@
 			};
 			name = Debug;
 		};
-		6F9F7B921D889AA4001EF3FF /* Release */ = {
+		6F597FCC1D8CA81C00420E0B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -441,7 +433,7 @@
 			};
 			name = Release;
 		};
-		6F9F7B941D889AA4001EF3FF /* Debug */ = {
+		6F597FCE1D8CA81C00420E0B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -458,7 +450,7 @@
 			};
 			name = Debug;
 		};
-		6F9F7B951D889AA4001EF3FF /* Release */ = {
+		6F597FCF1D8CA81C00420E0B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -475,7 +467,7 @@
 			};
 			name = Release;
 		};
-		6F9F7B971D889AA4001EF3FF /* Debug */ = {
+		6F597FD11D8CA81C00420E0B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -490,7 +482,7 @@
 			};
 			name = Debug;
 		};
-		6F9F7B981D889AA4001EF3FF /* Release */ = {
+		6F597FD21D8CA81C00420E0B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -505,7 +497,7 @@
 			};
 			name = Release;
 		};
-		6F9F7B9A1D889AA4001EF3FF /* Debug */ = {
+		6F597FD41D8CA81C00420E0B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -519,7 +511,7 @@
 			};
 			name = Debug;
 		};
-		6F9F7B9B1D889AA4001EF3FF /* Release */ = {
+		6F597FD51D8CA81C00420E0B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -536,43 +528,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6F9F7B661D889AA3001EF3FF /* Build configuration list for PBXProject "VRKitExample" */ = {
+		6F597FA01D8CA81C00420E0B /* Build configuration list for PBXProject "VRKitExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6F9F7B911D889AA4001EF3FF /* Debug */,
-				6F9F7B921D889AA4001EF3FF /* Release */,
+				6F597FCB1D8CA81C00420E0B /* Debug */,
+				6F597FCC1D8CA81C00420E0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6F9F7B931D889AA4001EF3FF /* Build configuration list for PBXNativeTarget "VRKitExample" */ = {
+		6F597FCD1D8CA81C00420E0B /* Build configuration list for PBXNativeTarget "VRKitExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6F9F7B941D889AA4001EF3FF /* Debug */,
-				6F9F7B951D889AA4001EF3FF /* Release */,
+				6F597FCE1D8CA81C00420E0B /* Debug */,
+				6F597FCF1D8CA81C00420E0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6F9F7B961D889AA4001EF3FF /* Build configuration list for PBXNativeTarget "VRKitExampleTests" */ = {
+		6F597FD01D8CA81C00420E0B /* Build configuration list for PBXNativeTarget "VRKitExampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6F9F7B971D889AA4001EF3FF /* Debug */,
-				6F9F7B981D889AA4001EF3FF /* Release */,
+				6F597FD11D8CA81C00420E0B /* Debug */,
+				6F597FD21D8CA81C00420E0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6F9F7B991D889AA4001EF3FF /* Build configuration list for PBXNativeTarget "VRKitExampleUITests" */ = {
+		6F597FD31D8CA81C00420E0B /* Build configuration list for PBXNativeTarget "VRKitExampleUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6F9F7B9A1D889AA4001EF3FF /* Debug */,
-				6F9F7B9B1D889AA4001EF3FF /* Release */,
+				6F597FD41D8CA81C00420E0B /* Debug */,
+				6F597FD51D8CA81C00420E0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 6F9F7B631D889AA3001EF3FF /* Project object */;
+	rootObject = 6F597F9D1D8CA81C00420E0B /* Project object */;
 }

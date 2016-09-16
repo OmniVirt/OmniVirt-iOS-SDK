@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  VRKitExample
 //
-//  Created by Jatupon Sukkasem on 9/13/16.
-//  Copyright © 2016 Jatupon Sukkasem. All rights reserved.
+//  Created by Jatupon Sukkasem on 9/16/16.
+//  Copyright © 2016 OmniVirt Team. All rights reserved.
 //
 
 import UIKit
@@ -40,5 +40,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+
+
 }
 

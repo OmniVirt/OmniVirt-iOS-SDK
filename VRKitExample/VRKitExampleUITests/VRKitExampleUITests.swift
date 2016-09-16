@@ -2,8 +2,8 @@
 //  VRKitExampleUITests.swift
 //  VRKitExampleUITests
 //
-//  Created by Jatupon Sukkasem on 9/13/16.
-//  Copyright © 2016 Jatupon Sukkasem. All rights reserved.
+//  Created by Jatupon Sukkasem on 9/16/16.
+//  Copyright © 2016 OmniVirt Team. All rights reserved.
 //
 
 import XCTest

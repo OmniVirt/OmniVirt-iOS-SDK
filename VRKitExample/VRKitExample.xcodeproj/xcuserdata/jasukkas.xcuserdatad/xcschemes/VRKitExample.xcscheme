@@ -14,21 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6F9F7B271D889582001EF3FF"
-               BuildableName = "VRKit.framework"
-               BlueprintName = "VRKit"
-               ReferencedContainer = "container:../VRKit/VRKit.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "YES"
-            buildForArchiving = "YES"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6F9F7B6A1D889AA3001EF3FF"
+               BlueprintIdentifier = "6F597FA41D8CA81C00420E0B"
                BuildableName = "VRKitExample.app"
                BlueprintName = "VRKitExample"
                ReferencedContainer = "container:VRKitExample.xcodeproj">
@@ -46,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6F9F7B7E1D889AA4001EF3FF"
+               BlueprintIdentifier = "6F597FB81D8CA81C00420E0B"
                BuildableName = "VRKitExampleTests.xctest"
                BlueprintName = "VRKitExampleTests"
                ReferencedContainer = "container:VRKitExample.xcodeproj">
@@ -56,7 +42,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "6F9F7B891D889AA4001EF3FF"
+               BlueprintIdentifier = "6F597FC31D8CA81C00420E0B"
                BuildableName = "VRKitExampleUITests.xctest"
                BlueprintName = "VRKitExampleUITests"
                ReferencedContainer = "container:VRKitExample.xcodeproj">
@@ -66,7 +52,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6F9F7B6A1D889AA3001EF3FF"
+            BlueprintIdentifier = "6F597FA41D8CA81C00420E0B"
             BuildableName = "VRKitExample.app"
             BlueprintName = "VRKitExample"
             ReferencedContainer = "container:VRKitExample.xcodeproj">
@@ -89,7 +75,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6F9F7B6A1D889AA3001EF3FF"
+            BlueprintIdentifier = "6F597FA41D8CA81C00420E0B"
             BuildableName = "VRKitExample.app"
             BlueprintName = "VRKitExample"
             ReferencedContainer = "container:VRKitExample.xcodeproj">
@@ -108,7 +94,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "6F9F7B6A1D889AA3001EF3FF"
+            BlueprintIdentifier = "6F597FA41D8CA81C00420E0B"
             BuildableName = "VRKitExample.app"
             BlueprintName = "VRKitExample"
             ReferencedContainer = "container:VRKitExample.xcodeproj">

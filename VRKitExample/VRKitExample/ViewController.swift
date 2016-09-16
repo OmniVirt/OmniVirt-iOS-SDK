@@ -53,20 +53,20 @@ class ViewController: UIViewController, VRPlayerDelegate {
         // Dispose of any resources that can be recreated.
     }
 
-    func playerDidLoaded(_ player: VRPlayer, withMaximumQuality maximum:Int, andCurrentQuality current:Quality, andCardboardMode mode:Mode) {
+    func playerLoaded(_ player: VRPlayer, withMaximumQuality maximum:Int, andCurrentQuality current:Quality, andCardboardMode mode:Mode) {
         log.text! += "Loaded maximumQuality: " + String(describing: maximum) + " currentQuality: " + String(describing: current) + "\n"
         
         // Use this method to start playing
         // 
         // player.play()
     }
-    func playerDidStarted(_ player: VRPlayer) {
+    func playerStarted(_ player: VRPlayer) {
         log.text! += "Started\n"
     }
-    func playerDidPaused(_ player: VRPlayer) {
+    func playerPaused(_ player: VRPlayer) {
         log.text! += "Paused\n"
     }
-    func playerDidEnded(_ player: VRPlayer) {
+    func playerEnded(_ player: VRPlayer) {
         log.text! += "Ended\n"
     }
     func playerDurationChanged(_ player: VRPlayer, withValue value:Double) {
@@ -90,7 +90,7 @@ class ViewController: UIViewController, VRPlayerDelegate {
     func playerQualityChanged(_ player: VRPlayer, withQuality value:Quality) {
         log.text! += "Quality changed to " + String(describing: value) + "\n"
     }
-    func playerDidExpanded(_ player: VRPlayer) {
+    func playerExpanded(_ player: VRPlayer) {
         log.text! += "Expanded\n"
         isExpanded = true;
         
@@ -99,7 +99,7 @@ class ViewController: UIViewController, VRPlayerDelegate {
             logHeight.constant = 0.0
         }
     }
-    func playerDidCollapsed(_ player: VRPlayer) {
+    func playerCollapsed(_ player: VRPlayer) {
         log.text! += "Collapsed\n"
         isExpanded = false;
         
@@ -114,7 +114,7 @@ class ViewController: UIViewController, VRPlayerDelegate {
     func playerLongitudeChanged(_ player: VRPlayer, withLongitude value:Double) {
         // log.text! += "Longitude changed to " + String(value) + "\n"
     }
-    func playerDidSwitched(_ player: VRPlayer, withScene name: String, withHistory history: [String]) {
+    func playerSwitched(_ player: VRPlayer, withScene name: String, withHistory history: [String]) {
         log.text! += "Switched to " + name + "\n"
     }
 }
