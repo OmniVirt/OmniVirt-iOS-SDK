@@ -33,11 +33,15 @@ Replace your OmniVirt content ID and insert "player.cardboard = Mode.ON;" inside
 
 ![alt tag](https://s3.amazonaws.com/adsoptimal-3dx-assets/manual_upload/wiki/step+3+-+Turn+cardboard+mode+on.png)
 
+# Output
+
+![alt tag](https://s3.amazonaws.com/adsoptimal-3dx-assets/manual_upload/wiki/cardboard+output.png)
+
 # About OmniVirt
 
 OmniVirt hosts and distributes VR/360 content cross-platform.
 With one upload, your virtual reality content can be displayed in any platforms and formats.
-To learn more about OmniVirt, please visit our [website](https://www.omnivirt.com).
+To learn more about all OmniVirt services, please visit our [website](https://www.omnivirt.com).
 
 # Questions?
 
