@@ -10,7 +10,6 @@ import UIKit
 import VRKit
 
 class ViewController: UIViewController, VRPlayerDelegate {
-
     @IBOutlet weak var player: VRPlayer!
     @IBOutlet weak var log: UITextView!
     @IBOutlet weak var logHeight: NSLayoutConstraint!
@@ -68,6 +67,9 @@ class ViewController: UIViewController, VRPlayerDelegate {
     }
     func playerEnded(_ player: VRPlayer) {
         log.text! += "Ended\n"
+    }
+    func playerSkipped(_ player: VRPlayer) {
+        log.text! += "Skipped\n"
     }
     func playerDurationChanged(_ player: VRPlayer, withValue value:Double) {
         // log.text! += "Duration changed to " + String(value) + "\n"
