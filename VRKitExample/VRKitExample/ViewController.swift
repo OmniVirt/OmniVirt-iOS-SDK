@@ -9,12 +9,13 @@
 import UIKit
 import VRKit
 
-class ViewController: UIViewController, VRPlayerDelegate {
+class ViewController: UIViewController, VRPlayerDelegate, VRAdDelegate {
     @IBOutlet weak var player: VRPlayer!
     @IBOutlet weak var log: UITextView!
     @IBOutlet weak var logHeight: NSLayoutConstraint!
     
     var isExpanded: Bool = false;
+    var omnivirtAd: VRAd? = nil;
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,7 +27,18 @@ class ViewController: UIViewController, VRPlayerDelegate {
         //
         // player.interface = Mode.OFF;
         
-        player.load(withContentID: 24);
+        player.load(withContentID: 20);
+        
+        // For manually creating VRplayer without storyboard, please uncomment the following code.
+        
+        /*let _player = VRPlayer.create();
+         _player.load(withContentID: 20);
+         _player.frame = self.view.frame;
+         self.view.addSubview(_player);
+         _player.layoutSubviews();*/
+        
+        // Creating VR Ad instance
+        self.omnivirtAd = VRAd.create(withAdSpaceID: 1234, andViewController: self, andListener: self);
         
         NotificationCenter.default.addObserver(
             self,
@@ -52,6 +64,48 @@ class ViewController: UIViewController, VRPlayerDelegate {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBOutlet weak var startAdButton: UIButton!
+    @IBAction func startAd(_ sender: Any) {
+        if (startAdButton.titleLabel?.text == "Load Ad") {
+            self.omnivirtAd?.load();
+        }
+        else if (startAdButton.titleLabel?.text == "Start Ad") {
+            self.omnivirtAd?.show(withCardboardMode: Mode.ON);
+        }
+    }
+    
+    func adStatusChanged(withAd ad: VRAd, andStatus status: AdState) {
+        switch (status) {
+        case AdState.NONE:
+            break;
+        case AdState.LOADING:
+            log.text! += "Ad state is loading\n"
+            startAdButton.setTitle("Loading Ad", for: UIControlState.normal);
+            startAdButton.isEnabled = false;
+            break;
+        case AdState.READY:
+            log.text! += "Ad state is ready\n"
+            startAdButton.setTitle("Start Ad", for: UIControlState.normal);
+            startAdButton.isEnabled = true;
+            break;
+        case AdState.SHOWING:
+            log.text! += "Ad state is showing\n"
+            startAdButton.setTitle("Showing Ad", for: UIControlState.normal);
+            startAdButton.isEnabled = false;
+            break;
+        case AdState.COMPLETED:
+            log.text! += "Ad state is completed\n"
+            startAdButton.setTitle("Load Ad", for: UIControlState.normal);
+            startAdButton.isEnabled = true;
+            break;
+        case AdState.FAILED:
+            log.text! += "Ad state is failed\n"
+            startAdButton.setTitle("Load Ad", for: UIControlState.normal);
+            startAdButton.isEnabled = true;
+            break;
+        }
+    }
+    
     func playerLoaded(_ player: VRPlayer, withMaximumQuality maximum:Int, andCurrentQuality current:Quality, andCardboardMode mode:Mode) {
         log.text! += "Loaded maximumQuality: " + String(describing: maximum) + " currentQuality: " + String(describing: current) + "\n"
         

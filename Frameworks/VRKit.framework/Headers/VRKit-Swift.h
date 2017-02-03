@@ -123,11 +123,24 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
 #pragma clang diagnostic ignored "-Wduplicate-method-arg"
+@class NSBundle;
 @class NSCoder;
+
+SWIFT_CLASS("_TtC5VRKit4VRAd")
+@interface VRAd : UIViewController
+- (void)viewDidLoad;
+- (void)load;
+- (void)unload;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIWebView;
 
 SWIFT_CLASS("_TtC5VRKit8VRPlayer")
 @interface VRPlayer : UIView <UIWebViewDelegate>
++ (VRPlayer * _Nonnull)create;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 - (void)layoutSubviews;
 - (void)loadWithContentID:(uint)contentID;
