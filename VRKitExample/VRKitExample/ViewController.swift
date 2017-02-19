@@ -38,7 +38,7 @@ class ViewController: UIViewController, VRPlayerDelegate, VRAdDelegate {
          _player.layoutSubviews();*/
         
         // Creating VR Ad instance
-        self.omnivirtAd = VRAd.create(withAdSpaceID: 1234, andViewController: self, andListener: self);
+        self.omnivirtAd = VRAd.create(withAdSpaceID: 1, andViewController: self, andListener: self);
         
         NotificationCenter.default.addObserver(
             self,
@@ -70,7 +70,8 @@ class ViewController: UIViewController, VRPlayerDelegate, VRAdDelegate {
             self.omnivirtAd?.load();
         }
         else if (startAdButton.titleLabel?.text == "Start Ad") {
-            self.omnivirtAd?.show(withCardboardMode: Mode.ON);
+            // Select the option to turn on / off Cardboard mode for ads
+            self.omnivirtAd?.show(withCardboardMode: Mode.OFF);
         }
     }
     
