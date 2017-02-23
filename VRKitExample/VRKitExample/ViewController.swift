@@ -65,6 +65,8 @@ class ViewController: UIViewController, VRPlayerDelegate, VRAdDelegate {
     }
 
     @IBOutlet weak var startAdButton: UIButton!
+    @IBOutlet weak var startAdButtonInVR: UIButton!
+    
     @IBAction func startAd(_ sender: Any) {
         if (startAdButton.titleLabel?.text == "Load Ad") {
             self.omnivirtAd?.load();
@@ -75,6 +77,10 @@ class ViewController: UIViewController, VRPlayerDelegate, VRAdDelegate {
         }
     }
     
+    @IBAction func startAdInVR(_ sender: Any) {
+        self.omnivirtAd?.show(withCardboardMode: Mode.ON);
+    }
+    
     func adStatusChanged(withAd ad: VRAd, andStatus status: AdState) {
         switch (status) {
         case AdState.NONE:
@@ -83,26 +89,31 @@ class ViewController: UIViewController, VRPlayerDelegate, VRAdDelegate {
             log.text! += "Ad state is loading\n"
             startAdButton.setTitle("Loading Ad", for: UIControlState.normal);
             startAdButton.isEnabled = false;
+            startAdButtonInVR.isEnabled = false;
             break;
         case AdState.READY:
             log.text! += "Ad state is ready\n"
             startAdButton.setTitle("Start Ad", for: UIControlState.normal);
             startAdButton.isEnabled = true;
+            startAdButtonInVR.isEnabled = true;
             break;
         case AdState.SHOWING:
             log.text! += "Ad state is showing\n"
             startAdButton.setTitle("Showing Ad", for: UIControlState.normal);
             startAdButton.isEnabled = false;
+            startAdButtonInVR.isEnabled = false;
             break;
         case AdState.COMPLETED:
             log.text! += "Ad state is completed\n"
             startAdButton.setTitle("Load Ad", for: UIControlState.normal);
             startAdButton.isEnabled = true;
+            startAdButtonInVR.isEnabled = true;
             break;
         case AdState.FAILED:
             log.text! += "Ad state is failed\n"
             startAdButton.setTitle("Load Ad", for: UIControlState.normal);
             startAdButton.isEnabled = true;
+            startAdButtonInVR.isEnabled = true;
             break;
         }
     }
