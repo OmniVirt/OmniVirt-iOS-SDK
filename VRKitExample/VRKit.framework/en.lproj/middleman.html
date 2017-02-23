@@ -8,13 +8,15 @@
         </style>
     </head>
     <body>
-        <script type="text/javascript" src="https://upload.omnivirt.com/scripts/embed.js"></script>
         <iframe id="ado-{CONTENTID}" src="about:blank" webkitAllowFullScreen="1" mozallowfullscreen="1" allowFullScreen="1"></iframe>
         <script type="text/javascript">
             var middleman = "{MIDDLEMAN}";
             if (middleman == "{MIDDLE" + "MAN}") middleman = "https://www.vroptimal-3dx-assets.com/content/{CONTENTID}?"
             else middleman = middleman + ((middleman.indexOf("?") != -1) ? "&" : "?") + "id={CONTENTID}&";
             document.getElementById("ado-{CONTENTID}").setAttribute("src", middleman + "player=true&experience&referer=%2A");
+        </script>
+        <script type="text/javascript" src="https://remote.vroptimal-3dx-assets.com/scripts/vroptimal.js"></script>
+        <script>
             window.location = 'omnivirtbridge://initialize?null';
         </script>
     </body>
