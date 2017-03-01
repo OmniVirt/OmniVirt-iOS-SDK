@@ -63,7 +63,7 @@ You can create the embed player without a Storyboard by using below codes.
 # Create VR ad space and run your ad campaigns
 
    Sell your own campaigns and dynamically insert campaign with no hard-coding/development work required into your app.
-   Backfill your inventory with premium CPM experiences from OmniVirt’s network of advertisers.
+   Backfill your inventory with premium CPM experiences from OmniVirt’s network of advertisers. We support both 360° and 2D video ads inside VR apps.
 
    Please sign up for OmniVirt account to create Ad Space and replace your Ad Space ID below.
 
