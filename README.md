@@ -6,6 +6,7 @@ You can use OmniVirt technology for
 - Promote your VR campaigns to gain viewerships across OmniVirt Network and the web.
 
 Contact us for more info at [contact@omnivirt.com](mailto:contact@omnivirt.com)
+Visit [OmniVirt Website](https://www.omnivirt.com/) to upload content and create ad space.
 
 
 # Embed your VR content into your app
@@ -49,7 +50,7 @@ Replace your OmniVirt content ID and insert "player.cardboard = Mode.ON;" inside
 
 ## Alternative way to embed our VR player
 
-You can create the embed player without using Storyboard by using below codes.
+You can create the embed player without a Storyboard by using below codes.
 
    <pre>
    let _player = VRPlayer.create();
