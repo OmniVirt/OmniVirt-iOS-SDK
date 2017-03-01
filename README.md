@@ -5,7 +5,7 @@ You can use OmniVirt technology for
 - VR App: [Embed your VR content into your app](#embed-your-vr-content-into-your-app)
 - Promote your VR campaigns to gain viewerships across OmniVirt Network and the web.
 
-Contact us for more info at [contact@omnivirt.com](mailto:contact@omnivirt.com)
+Contact us for more info at [contact@omnivirt.com](mailto:contact@omnivirt.com).
 Visit [OmniVirt Website](https://www.omnivirt.com/) to upload content and create ad space.
 
 
