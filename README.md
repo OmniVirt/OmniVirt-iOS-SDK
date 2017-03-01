@@ -1,9 +1,9 @@
 # Virtual Reality Advertising and Embed Player for iOS Apps
 
 You can use OmniVirt technology for
-- VR App: [Create VR ad space and run your ad campaigns](#adspace)
-- VR App: [Embed your VR content into your app](#embedplayer)
-- Across the web and OmniVirt Network: Promote your VR content to gain viewerships.
+- VR App: [Create VR ad space and run your ad campaigns](#create-vr-ad-space-and-run-your-ad-campaigns)
+- VR App: [Embed your VR content into your app](#embed-your-vr-content-into-your-app)
+- Promote your VR campaigns to gain viewerships across OmniVirt Network and the web.
 
 Contact us for more info at [contact@omnivirt.com](mailto:contact@omnivirt.com)
 
@@ -68,14 +68,12 @@ You can create the embed player without using Storyboard by using below codes.
 
    <pre>
    var omnivirtAd: VRAd? = nil;
-
    override func viewDidLoad() {
      ...
      // Initialization: Replace 1 with your Ad Space ID.
      self.omnivirtAd = VRAd.create(withAdSpaceID: 1, andViewController: self, andListener: self);
      ...
    }
-
    @IBAction func startAd(_ sender: Any) {
      ...
      if (startAdButton.titleLabel?.text == "Load Ad") {
@@ -90,7 +88,6 @@ You can create the embed player without using Storyboard by using below codes.
      }
      ...
    }
-
    // Use this method to listen if the ad is in loading, ready, showing, completed, or failed status.
    func adStatusChanged(withAd ad: VRAd, andStatus status: AdState) {
      switch (status) {
