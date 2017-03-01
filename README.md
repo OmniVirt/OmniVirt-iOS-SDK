@@ -1,11 +1,12 @@
 # Virtual Reality Advertising and Embed Player for iOS Apps
 
-Two use cases you can use OmniVirt technology
-* [Create VR ad space and run your ad campaigns](#adspace)
-* [Embed your VR content into your app](#embedplayer)
-* Promote your VR content across the web and our network
+You can use OmniVirt technology for
+- VR App: [Create VR ad space and run your ad campaigns](#adspace)
+- VR App: [Embed your VR content into your app](#embedplayer)
+- Across the web and OmniVirt Network: Promote your VR content to gain viewerships.
 
 Contact us for more info at [contact@omnivirt.com](mailto:contact@omnivirt.com)
+
 
 # Embed your VR content into your app
 
