@@ -1,8 +1,13 @@
 # Virtual Reality Advertising and Embed Player for iOS Apps
 
+Two use cases you can use OmniVirt technology
+* [Create VR ad space and run your ad campaigns](#adspace)
+* [Embed your VR content into your app](#embedplayer)
+* Promote your VR content across the web and our network
 
+Contact us for more info at [contact@omnivirt.com](mailto:contact@omnivirt.com)
 
-# Embed your VR content into iOS app
+# Embed your VR content into your app
 
 1. Clone iOS VR example project into your machine. 
    <pre>
@@ -11,7 +16,7 @@
 2. Open iOS *VRKitExample/VRKitExample.xcodeproj* project using XCode
 3. Build and run
 
-# Upload and test your VR content
+## Upload and test your VR content
 
 Please upload your VR/360-degree photo or video at [OmniVirt](https://www.omnivirt.com/).
 Once you have your content ID, please insert it as part of player.load's parameter.
@@ -19,7 +24,7 @@ Once you have your content ID, please insert it as part of player.load's paramet
    <pre>
    player.load(withContentID: 24); // Replace 24 into your Content ID.
    </pre>
-# Tutorial - Let's embed your content into your app
+## Tutorial - Let's embed your content into your app
 
 VRKitExample project mainly consists of VRKit.framework and ViewController code.
 The program is very simple and coded in very straightforward way.
@@ -37,11 +42,13 @@ Replace your OmniVirt content ID and insert "player.cardboard = Mode.ON;" inside
 
 ![alt tag](https://s3.amazonaws.com/adsoptimal-3dx-assets/manual_upload/wiki/step+3+-+Turn+cardboard+mode+on.png)
 
-# Output
+## Output
 
 ![alt tag](https://s3.amazonaws.com/adsoptimal-3dx-assets/manual_upload/wiki/cardboard+output.png)
 
-# Alternatively, you can create the embed player without using Storyboard by using below codes.
+## Alternative way to embed our VR player
+
+You can create the embed player without using Storyboard by using below codes.
 
    <pre>
    let _player = VRPlayer.create();
@@ -55,6 +62,7 @@ Replace your OmniVirt content ID and insert "player.cardboard = Mode.ON;" inside
 
    Sell your own campaigns and dynamically insert campaign with no hard-coding/development work required into your app.
    Backfill your inventory with premium CPM experiences from OmniVirt’s network of advertisers.
+
    Please sign up for OmniVirt account to create Ad Space and replace your Ad Space ID below.
 
    <pre>
