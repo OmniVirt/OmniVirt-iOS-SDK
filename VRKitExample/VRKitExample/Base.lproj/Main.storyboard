@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2659" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -37,30 +37,21 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ei-9O-oAx">
-                                <rect key="frame" x="80" y="617" width="56" height="30"/>
+                                <rect key="frame" x="159.5" y="617" width="56" height="30"/>
                                 <state key="normal" title="Load Ad"/>
                                 <connections>
                                     <action selector="startAd:" destination="BYZ-38-t0r" eventType="touchUpInside" id="O4n-fo-qt9"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjY-je-zvN" userLabel="Start Ad Button In VR">
-                                <rect key="frame" x="219" y="617" width="96" height="30"/>
-                                <state key="normal" title="Start Ad in VR"/>
-                                <connections>
-                                    <action selector="startAdInVR:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1it-kc-Y04"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="qjY-je-zvN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="79.5" id="8GT-S9-4xu"/>
                             <constraint firstAttribute="trailing" secondItem="nIw-Pt-DgS" secondAttribute="trailing" id="AAv-Wb-DAy"/>
                             <constraint firstItem="nIw-Pt-DgS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="HyT-xT-rfT"/>
                             <constraint firstItem="nIw-Pt-DgS" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="IFW-sX-uzc"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="qjY-je-zvN" secondAttribute="bottom" constant="20" id="IGK-fV-NnJ"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="usG-sQ-HVi" secondAttribute="bottom" id="IiL-o4-6gY"/>
                             <constraint firstItem="usG-sQ-HVi" firstAttribute="top" secondItem="nIw-Pt-DgS" secondAttribute="bottom" id="K6A-fn-xR4"/>
-                            <constraint firstItem="7Ei-9O-oAx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-79.5" id="NAX-uf-fH1"/>
+                            <constraint firstItem="7Ei-9O-oAx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="NAX-uf-fH1"/>
                             <constraint firstAttribute="trailing" secondItem="usG-sQ-HVi" secondAttribute="trailing" id="lt7-Z9-p3H"/>
                             <constraint firstItem="usG-sQ-HVi" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="mmG-64-svg"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="7Ei-9O-oAx" secondAttribute="bottom" constant="20" id="swk-Lw-cVF"/>
@@ -71,7 +62,6 @@
                         <outlet property="logHeight" destination="Bxg-Lm-Tdc" id="Czk-Rn-Onh"/>
                         <outlet property="player" destination="nIw-Pt-DgS" id="ZwF-Cs-n3l"/>
                         <outlet property="startAdButton" destination="7Ei-9O-oAx" id="toO-1b-kkt"/>
-                        <outlet property="startAdButtonInVR" destination="qjY-je-zvN" id="MZl-SJ-Jep"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

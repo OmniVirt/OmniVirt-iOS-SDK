@@ -65,7 +65,6 @@ class ViewController: UIViewController, VRPlayerDelegate, VRAdDelegate {
     }
 
     @IBOutlet weak var startAdButton: UIButton!
-    @IBOutlet weak var startAdButtonInVR: UIButton!
     
     @IBAction func startAd(_ sender: Any) {
         if (startAdButton.titleLabel?.text == "Load Ad") {
@@ -73,12 +72,19 @@ class ViewController: UIViewController, VRPlayerDelegate, VRAdDelegate {
         }
         else if (startAdButton.titleLabel?.text == "Start Ad") {
             // Select the option to turn on / off Cardboard mode for ads
-            self.omnivirtAd?.show(withCardboardMode: Mode.OFF);
+            let optionMenu = UIAlertController(title: nil, message: "Please choose Cardboard mode", preferredStyle: .actionSheet)
+            let offAction = UIAlertAction(title: "OFF", style: .default, handler: {
+                (alert: UIAlertAction!) -> Void in
+                self.omnivirtAd?.show(withCardboardMode: Mode.OFF);
+            })
+            let onAction = UIAlertAction(title: "ON", style: .default, handler: {
+                (alert: UIAlertAction!) -> Void in
+                self.omnivirtAd?.show(withCardboardMode: Mode.ON);
+            })
+            optionMenu.addAction(onAction)
+            optionMenu.addAction(offAction)
+            self.present(optionMenu, animated: true, completion: nil)
         }
-    }
-    
-    @IBAction func startAdInVR(_ sender: Any) {
-        self.omnivirtAd?.show(withCardboardMode: Mode.ON);
     }
     
     func adStatusChanged(withAd ad: VRAd, andStatus status: AdState) {
@@ -89,31 +95,28 @@ class ViewController: UIViewController, VRPlayerDelegate, VRAdDelegate {
             log.text! += "Ad state is loading\n"
             startAdButton.setTitle("Loading Ad", for: UIControlState.normal);
             startAdButton.isEnabled = false;
-            startAdButtonInVR.isEnabled = false;
             break;
         case AdState.READY:
             log.text! += "Ad state is ready\n"
             startAdButton.setTitle("Start Ad", for: UIControlState.normal);
             startAdButton.isEnabled = true;
-            startAdButtonInVR.isEnabled = true;
             break;
         case AdState.SHOWING:
             log.text! += "Ad state is showing\n"
             startAdButton.setTitle("Showing Ad", for: UIControlState.normal);
             startAdButton.isEnabled = false;
-            startAdButtonInVR.isEnabled = false;
+            self.player.idle = Mode.ON; // Idling any video player to reserve GPU resources for VR Ad
             break;
         case AdState.COMPLETED:
             log.text! += "Ad state is completed\n"
             startAdButton.setTitle("Load Ad", for: UIControlState.normal);
             startAdButton.isEnabled = true;
-            startAdButtonInVR.isEnabled = true;
+            self.player.idle = Mode.OFF; // Resume the video player
             break;
         case AdState.FAILED:
             log.text! += "Ad state is failed\n"
             startAdButton.setTitle("Load Ad", for: UIControlState.normal);
             startAdButton.isEnabled = true;
-            startAdButtonInVR.isEnabled = true;
             break;
         }
     }
