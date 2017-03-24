@@ -13,7 +13,7 @@
             var middleman = "{MIDDLEMAN}";
             if (middleman == "{MIDDLE" + "MAN}") middleman = "https://www.vroptimal-3dx-assets.com/content/{CONTENTID}?"
             else middleman = middleman + ((middleman.indexOf("?") != -1) ? "&" : "?") + "id={CONTENTID}&";
-            document.getElementById("ado-{CONTENTID}").setAttribute("src", middleman + "player=true&experience&referer=%2A");
+            document.getElementById("ado-{CONTENTID}").setAttribute("src", middleman + "player=true&experience&sdk=true&referer=%2A");
         </script>
         <script type="text/javascript" src="https://remote.vroptimal-3dx-assets.com/scripts/vroptimal.js"></script>
         <script>
