@@ -69,7 +69,6 @@ class ViewController: UIViewController, VRPlayerDelegate, VRAdDelegate {
     @IBAction func startAd(_ sender: Any) {
         if (startAdButton.titleLabel?.text == "Load Ad") {
             self.omnivirtAd?.load();
-            self.omnivirtAd?.show(withCardboardMode: Mode.ON);
         }
         else if (startAdButton.titleLabel?.text == "Start Ad") {
             // Select the option to turn on / off Cardboard mode for ads
