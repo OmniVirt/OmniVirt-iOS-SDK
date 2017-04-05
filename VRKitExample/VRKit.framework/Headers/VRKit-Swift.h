@@ -148,7 +148,6 @@ SWIFT_CLASS("_TtC5VRKit4VRAd")
 - (void)viewDidLoad;
 - (void)load;
 - (void)unload;
-- (void)viewWillLayoutSubviews;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
