@@ -27,7 +27,7 @@ class ViewController: UIViewController, VRPlayerDelegate, VRAdDelegate {
         //
         // player.interface = Mode.OFF;
         
-        player.load(withContentID: 20);
+        player.load(withContentID: 24);
         
         // For manually creating VRplayer without storyboard, please uncomment the following code.
         
