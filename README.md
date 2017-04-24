@@ -20,10 +20,8 @@ Visit [OmniVirt Website](https://www.omnivirt.com/) to upload content and create
 
 ## More example
 
-   <pre>
-   [FullscreenVRPlayer](https://github.com/OmniVirt/iOS-VR-Example/tree/master/Swift/FullscreenVRPlayer%20Example) - Use this class to launch VR in a new fullsreen controller
-   [VRPlayer](https://github.com/OmniVirt/iOS-VR-Example/tree/master/Swift/VRPlayer%20Example) - Use this class to embed VR into your existing controller
-   </pre>
+- [FullscreenVRPlayer](https://github.com/OmniVirt/iOS-VR-Example/tree/master/Swift/FullscreenVRPlayer%20Example) - Use this class to launch VR in a new fullsreen controller
+- [VRPlayer](https://github.com/OmniVirt/iOS-VR-Example/tree/master/Swift/VRPlayer%20Example) - Use this class to embed VR into your existing controller
 
 ## Upload and test your VR content
 
