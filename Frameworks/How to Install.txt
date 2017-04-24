@@ -1,6 +1,7 @@
 1. Drag drop the framework file into your XCode project
-2. From your Project Settings, select your Build Targets and navigate to "Build Phases"
-3. Click + (Add) icon and select "Run Script". Then, copy script inside "strip-frameworks.sh" and paste it into the shell command.
-4. Build your project and run
+2. Drag drop the framework file into "Embedded Binaries"
+3. From your Project Settings, select your Build Targets and navigate to "Build Phases"
+4. Click + (Add) icon and select "Run Script". Then, copy script inside "strip-frameworks.sh" and paste it into the shell command.
+5. Build your project and run
 
 Screenshot at: https://goo.gl/SehPXy

@@ -18,6 +18,13 @@ Visit [OmniVirt Website](https://www.omnivirt.com/) to upload content and create
 2. Open iOS *VRKitExample/VRKitExample.xcodeproj* project using XCode
 3. Build and run
 
+## More example
+
+   <pre>
+   [FullscreenVRPlayer](https://github.com/OmniVirt/iOS-VR-Example/tree/master/Swift/FullscreenVRPlayer%20Example) - Use this class to launch VR in a new fullsreen controller
+   [VRPlayer](https://github.com/OmniVirt/iOS-VR-Example/tree/master/Swift/VRPlayer%20Example) - Use this class to embed VR into your existing controller
+   </pre>
+
 ## Upload and test your VR content
 
 Please upload your VR/360-degree photo or video at [OmniVirt](https://www.omnivirt.com/).
@@ -26,13 +33,13 @@ Once you have your content ID, please insert it as part of player.load's paramet
    <pre>
    player.load(withContentID: 24); // Replace 24 into your Content ID.
    </pre>
-## Tutorial - Let's embed your content into your app
+## Tutorial - Let's embed your content into your controller
 
 VRKitExample project mainly consists of VRKit.framework and ViewController code.
 The program is very simple and coded in very straightforward way.
 This tutorial shows you how to make fullscreen cardboard app within minutes.
 
-Inside ViewController, you will find View created under "Player" named with VRPlayer class.
+Inside ViewController, you will find View created under "Player" named with VRPlayer class. **If you plan to use VRPlayer in both landscape and portrait orientation, please make sure to set your controller to allows both orientation**. Gyroscope may not give proper value if device orientation is not supported and the phone is rotated.
 
 ![alt tag](https://s3.amazonaws.com/adsoptimal-3dx-assets/manual_upload/wiki/step+1+-+Check+VRPlayer+View.png)
 
@@ -48,7 +55,7 @@ Replace your OmniVirt content ID and insert "player.cardboard = Mode.ON;" inside
 
 ![alt tag](https://s3.amazonaws.com/adsoptimal-3dx-assets/manual_upload/wiki/cardboard+output.png)
 
-## Alternative way to embed our VR player
+## Create VR player without storyboard.
 
 You can create the embed player without a Storyboard by using below codes.
 
