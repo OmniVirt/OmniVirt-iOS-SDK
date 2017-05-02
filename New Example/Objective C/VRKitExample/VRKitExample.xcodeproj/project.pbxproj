@@ -1,0 +1,377 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F33163211EB20C7A008E68ED /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F33163201EB20C7A008E68ED /* MainTableViewController.m */; };
+		F3FDF8271EAE0CBC00DF9701 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FDF8261EAE0CBC00DF9701 /* main.m */; };
+		F3FDF82A1EAE0CBC00DF9701 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FDF8291EAE0CBC00DF9701 /* AppDelegate.m */; };
+		F3FDF8301EAE0CBC00DF9701 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3FDF82E1EAE0CBC00DF9701 /* Main.storyboard */; };
+		F3FDF8321EAE0CBC00DF9701 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3FDF8311EAE0CBC00DF9701 /* Assets.xcassets */; };
+		F3FDF8351EAE0CBC00DF9701 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3FDF8331EAE0CBC00DF9701 /* LaunchScreen.storyboard */; };
+		F3FDF8421EAE105000DF9701 /* VRKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FDF83D1EAE101A00DF9701 /* VRKit.framework */; };
+		F3FDF8431EAE105000DF9701 /* VRKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3FDF83D1EAE101A00DF9701 /* VRKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F3FDF8441EAE105000DF9701 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F3FDF8431EAE105000DF9701 /* VRKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F331631F1EB20C7A008E68ED /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
+		F33163201EB20C7A008E68ED /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
+		F3FDF8221EAE0CBC00DF9701 /* VRKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VRKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3FDF8261EAE0CBC00DF9701 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F3FDF8281EAE0CBC00DF9701 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F3FDF8291EAE0CBC00DF9701 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F3FDF82F1EAE0CBC00DF9701 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F3FDF8311EAE0CBC00DF9701 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3FDF8341EAE0CBC00DF9701 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F3FDF8361EAE0CBC00DF9701 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3FDF83D1EAE101A00DF9701 /* VRKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VRKit.framework; path = VRKitExample/VRKit.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3FDF81F1EAE0CBC00DF9701 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3FDF8421EAE105000DF9701 /* VRKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F3FDF8191EAE0CBC00DF9701 = {
+			isa = PBXGroup;
+			children = (
+				F3FDF8241EAE0CBC00DF9701 /* VRKitExample */,
+				F3FDF8231EAE0CBC00DF9701 /* Products */,
+				F3FDF83C1EAE101A00DF9701 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F3FDF8231EAE0CBC00DF9701 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3FDF8221EAE0CBC00DF9701 /* VRKitExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3FDF8241EAE0CBC00DF9701 /* VRKitExample */ = {
+			isa = PBXGroup;
+			children = (
+				F3FDF8281EAE0CBC00DF9701 /* AppDelegate.h */,
+				F3FDF8291EAE0CBC00DF9701 /* AppDelegate.m */,
+				F331631F1EB20C7A008E68ED /* MainTableViewController.h */,
+				F33163201EB20C7A008E68ED /* MainTableViewController.m */,
+				F3FDF82E1EAE0CBC00DF9701 /* Main.storyboard */,
+				F3FDF8311EAE0CBC00DF9701 /* Assets.xcassets */,
+				F3FDF8331EAE0CBC00DF9701 /* LaunchScreen.storyboard */,
+				F3FDF8361EAE0CBC00DF9701 /* Info.plist */,
+				F3FDF8251EAE0CBC00DF9701 /* Supporting Files */,
+			);
+			path = VRKitExample;
+			sourceTree = "<group>";
+		};
+		F3FDF8251EAE0CBC00DF9701 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3FDF8261EAE0CBC00DF9701 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F3FDF83C1EAE101A00DF9701 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3FDF83D1EAE101A00DF9701 /* VRKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3FDF8211EAE0CBC00DF9701 /* VRKitExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3FDF8391EAE0CBC00DF9701 /* Build configuration list for PBXNativeTarget "VRKitExample" */;
+			buildPhases = (
+				F3FDF81E1EAE0CBC00DF9701 /* Sources */,
+				F3FDF81F1EAE0CBC00DF9701 /* Frameworks */,
+				F3FDF8201EAE0CBC00DF9701 /* Resources */,
+				F3FDF8441EAE105000DF9701 /* Embed Frameworks */,
+				F3FDF8461EAE4CFA00DF9701 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VRKitExample;
+			productName = VRKitExample;
+			productReference = F3FDF8221EAE0CBC00DF9701 /* VRKitExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3FDF81A1EAE0CBC00DF9701 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Omnivirt;
+				TargetAttributes = {
+					F3FDF8211EAE0CBC00DF9701 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = F299NB56CU;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F3FDF81D1EAE0CBC00DF9701 /* Build configuration list for PBXProject "VRKitExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F3FDF8191EAE0CBC00DF9701;
+			productRefGroup = F3FDF8231EAE0CBC00DF9701 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3FDF8211EAE0CBC00DF9701 /* VRKitExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3FDF8201EAE0CBC00DF9701 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3FDF8351EAE0CBC00DF9701 /* LaunchScreen.storyboard in Resources */,
+				F3FDF8321EAE0CBC00DF9701 /* Assets.xcassets in Resources */,
+				F3FDF8301EAE0CBC00DF9701 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F3FDF8461EAE4CFA00DF9701 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "################################################################################\n#\n# Copyright 2015 Realm Inc.\n#\n# Licensed under the Apache License, Version 2.0 (the \"License\");\n# you may not use this file except in compliance with the License.\n# You may obtain a copy of the License at\n#\n# http://www.apache.org/licenses/LICENSE-2.0\n#\n# Unless required by applicable law or agreed to in writing, software\n# distributed under the License is distributed on an \"AS IS\" BASIS,\n# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n# See the License for the specific language governing permissions and\n# limitations under the License.\n#\n################################################################################\n\n# This script strips all non-valid architectures from dynamic libraries in\n# the application's `Frameworks` directory.\n#\n# The following environment variables are required:\n#\n# BUILT_PRODUCTS_DIR\n# FRAMEWORKS_FOLDER_PATH\n# VALID_ARCHS\n# EXPANDED_CODE_SIGN_IDENTITY\n\n\n# Signs a framework with the provided identity\ncode_sign() {\n    # Use the current code_sign_identitiy\n    echo \"Code Signing $1 with Identity ${EXPANDED_CODE_SIGN_IDENTITY_NAME}\"\n    echo \"/usr/bin/codesign --force --sign ${EXPANDED_CODE_SIGN_IDENTITY} --preserve-metadata=identifier,entitlements $1\"\n    /usr/bin/codesign --force --sign ${EXPANDED_CODE_SIGN_IDENTITY} --preserve-metadata=identifier,entitlements \"$1\"\n}\n\n# Set working directory to product’s embedded frameworks\ncd \"${BUILT_PRODUCTS_DIR}/${FRAMEWORKS_FOLDER_PATH}\"\n\nif [ \"$ACTION\" = \"install\" ]; then\necho \"Copy .bcsymbolmap files to .xcarchive\"\nfind . -name '*.bcsymbolmap' -type f -exec mv {} \"${CONFIGURATION_BUILD_DIR}\" \\;\nelse\n# Delete *.bcsymbolmap files from framework bundle unless archiving\nfind . -name '*.bcsymbolmap' -type f -exec rm -rf \"{}\" +\\;\nfi\n\necho \"Stripping frameworks\"\n\nfor file in $(find . -type f -perm +111); do\n# Skip non-dynamic libraries\nif ! [[ \"$(file \"$file\")\" == *\"dynamically linked shared library\"* ]]; then\ncontinue\nfi\n# Get architectures for current file\narchs=\"$(lipo -info \"${file}\" | rev | cut -d ':' -f1 | rev)\"\nstripped=\"\"\nfor arch in $archs; do\nif ! [[ \"${VALID_ARCHS}\" == *\"$arch\"* ]]; then\n# Strip non-valid architectures in-place\nlipo -remove \"$arch\" -output \"$file\" \"$file\" || exit 1\nstripped=\"$stripped $arch\"\nfi\ndone\nif [[ \"$stripped\" != \"\" ]]; then\necho \"Stripped $file of architectures:$stripped\"\nif [ \"${CODE_SIGNING_REQUIRED}\" == \"YES\" ]; then\ncode_sign \"${file}\"\nfi\nfi\ndone\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3FDF81E1EAE0CBC00DF9701 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F33163211EB20C7A008E68ED /* MainTableViewController.m in Sources */,
+				F3FDF82A1EAE0CBC00DF9701 /* AppDelegate.m in Sources */,
+				F3FDF8271EAE0CBC00DF9701 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F3FDF82E1EAE0CBC00DF9701 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3FDF82F1EAE0CBC00DF9701 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F3FDF8331EAE0CBC00DF9701 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3FDF8341EAE0CBC00DF9701 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F3FDF8371EAE0CBC00DF9701 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F3FDF8381EAE0CBC00DF9701 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3FDF83A1EAE0CBC00DF9701 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F299NB56CU;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VRKitExample",
+				);
+				INFOPLIST_FILE = VRKitExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.omnivirt.VRKitExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F3FDF83B1EAE0CBC00DF9701 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F299NB56CU;
+				ENABLE_BITCODE = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/VRKitExample",
+				);
+				INFOPLIST_FILE = VRKitExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.omnivirt.VRKitExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3FDF81D1EAE0CBC00DF9701 /* Build configuration list for PBXProject "VRKitExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3FDF8371EAE0CBC00DF9701 /* Debug */,
+				F3FDF8381EAE0CBC00DF9701 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3FDF8391EAE0CBC00DF9701 /* Build configuration list for PBXNativeTarget "VRKitExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3FDF83A1EAE0CBC00DF9701 /* Debug */,
+				F3FDF83B1EAE0CBC00DF9701 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3FDF81A1EAE0CBC00DF9701 /* Project object */;
+}
