@@ -20,10 +20,14 @@ class MainTableViewController: UITableViewController, UITextFieldDelegate, VRPla
     var omnivirtAd: VRAd? = nil
     var isCardboard: Bool = false
     var mode = 1
+    var isExpanded: Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let userDefaults = UserDefaults.standard
+        userDefaults.removeObject(forKey: "VRKIT_ENABLE_STAGING")
+        userDefaults.synchronize()
     }
 
     // MARK: - Table view data source & delegate
@@ -35,20 +39,39 @@ class MainTableViewController: UITableViewController, UITextFieldDelegate, VRPla
             alertController.addAction(UIAlertAction(title: "View Player in Fullscreen", style: .default, handler: { action in
                 self.mode = 1
                 self.modeLabel.text = action.title
+                tableView.reloadData()
             }))
             alertController.addAction(UIAlertAction(title: "View Player in Embed", style: .default, handler: { action in
                 self.mode = 2
                 self.modeLabel.text = action.title
+                tableView.reloadData()
             }))
             alertController.addAction(UIAlertAction(title: "View Ad Only", style: .default, handler: { action in
                 self.mode = 3
                 self.modeLabel.text = action.title
+                tableView.reloadData()
             }))
             alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: { action in
             }))
             present(alertController, animated: true, completion: nil)
         } else if indexPath.section == 3 {
             submit()
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if mode == 2 && indexPath.section == 1 && indexPath.row == 1 {
+            return 0
+        } else if mode == 3 && indexPath.section == 1 && indexPath.row == 0 {
+            return 0
+        } else if indexPath.section == 4 {
+            if isExpanded {
+                return UIScreen.main.bounds.height + 1
+            } else {
+                return tableView.bounds.width
+            }
+        } else {
+            return tableView.rowHeight
         }
     }
 
@@ -169,10 +192,30 @@ class MainTableViewController: UITableViewController, UITextFieldDelegate, VRPla
     
     func playerExpanded(_ player: VRPlayer) {
         print("Expanded")
+        
+        isExpanded = true
+        
+        navigationController?.setNavigationBarHidden(true, animated: false)
+        
+        tableView.reloadData()
+        
+        tableView.isScrollEnabled = false
+        
+        var rect = tableView.rectForRow(at: IndexPath(row: 0, section: 4))
+        rect = rect.offsetBy(dx: 0, dy: -0.5)
+        tableView.scrollRectToVisible(rect, animated: false)
     }
     
     func playerCollapsed(_ player: VRPlayer) {
         print("Collapsed")
+        
+        isExpanded = false
+        
+        navigationController?.setNavigationBarHidden(false, animated: false)
+        
+        tableView.reloadData()
+        
+        tableView.isScrollEnabled = true
     }
     
     func playerLatitudeChanged(_ player: VRPlayer, withLatitude value:Double) {

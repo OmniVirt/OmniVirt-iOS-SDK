@@ -20,6 +20,7 @@
     VRAd *omnivirtAd;
     BOOL isCardboard;
     int mode;
+    BOOL isExpanded;
 }
 @end
 
@@ -30,6 +31,7 @@
     
     isCardboard = NO;
     mode = 1;
+    isExpanded = NO;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -46,20 +48,39 @@
         [alertController addAction:[UIAlertAction actionWithTitle:@"View Player in Fullscreen" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
             mode = 1;
             modeLabel.text = action.title;
+            [tableView reloadData];
         }]];
         [alertController addAction:[UIAlertAction actionWithTitle:@"View Player in Embed" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
             mode = 2;
             modeLabel.text = action.title;
+            [tableView reloadData];
         }]];
         [alertController addAction:[UIAlertAction actionWithTitle:@"View Ad Only" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
             mode = 3;
             modeLabel.text = action.title;
+            [tableView reloadData];
         }]];
         [alertController addAction:[UIAlertAction actionWithTitle:@"Cancel" style:UIAlertActionStyleCancel handler:^(UIAlertAction *action) {
         }]];
         [self presentViewController:alertController animated:YES completion:nil];
     } else if (indexPath.section == 3) {
         [self submit];
+    }
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (mode == 2 && indexPath.section == 1 && indexPath.row == 1) {
+        return 0;
+    } else if (mode == 3 && indexPath.section == 1 && indexPath.row == 0) {
+        return 0;
+    } else if (indexPath.section == 4) {
+        if (isExpanded) {
+            return [UIScreen mainScreen].bounds.size.height + 1;
+        } else {
+            return tableView.bounds.size.width;
+        }
+    } else {
+        return tableView.rowHeight;
     }
 }
 
@@ -185,10 +206,31 @@
 
 - (void)playerExpanded:(VRPlayer *)player {
     NSLog(@"Expanded");
+    
+    isExpanded = YES;
+    
+    [self.navigationController setNavigationBarHidden:YES animated:NO];
+    
+    [self.tableView reloadData];
+    
+    self.tableView.scrollEnabled = NO;
+    
+    CGRect rect = [self.tableView rectForRowAtIndexPath:[NSIndexPath indexPathForRow:0 inSection:4]];
+    rect.origin.y -= 0.5;
+    [self.tableView scrollRectToVisible:rect animated:NO];
+
 }
 
 - (void)playerCollapsed:(VRPlayer *)player {
     NSLog(@"Collapsed");
+    
+    isExpanded = NO;
+    
+    [self.navigationController setNavigationBarHidden:NO animated:NO];
+    
+    [self.tableView reloadData];
+    
+    self.tableView.scrollEnabled = YES;
 }
 
 - (void)playerLatitudeChanged:(VRPlayer *)player withLatitude:(double)value {
