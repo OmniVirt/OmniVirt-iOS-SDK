@@ -1,7 +1,7 @@
-# Virtual Reality Advertising and Embed Player for iOS Apps
+# Virtual Reality Embed Player and Monetization for iOS Apps
 
 You can use OmniVirt technology for
-- VR App: [Create VR ad space and run your ad campaigns](#create-vr-ad-space-and-run-your-ad-campaigns)
+- VR App: [Create VR ad space and earn revenues using your in-house VR campaigns or OmniVirt sourced demands](#create-vr-ad-space-and-run-your-ad-campaigns)
 - VR App: [Embed your VR content into your app](#embed-your-vr-content-into-your-app)
 - Promote your VR campaigns to gain viewerships across OmniVirt Network and the web.
 
@@ -19,6 +19,10 @@ Visit [OmniVirt Website](https://www.omnivirt.com/) to upload content and create
 3. Build and run
 
 ## More example
+
+- [Swift VR Player / Monetization](https://github.com/OmniVirt/iOS-VR-Example/tree/master/Examples/Swift/VRKitExample)
+- [Objective-C VR Player / Monetization](https://github.com/OmniVirt/iOS-VR-Example/tree/master/Examples/Objective%20C/VRKitExample)
+- [Cardboard QR Code Reader](https://github.com/OmniVirt/iOS-VR-Example/tree/master/Examples/Scan%20QR%20Code/VRKitExample)
 
 - [FullscreenVRPlayer](https://github.com/OmniVirt/iOS-VR-Example/tree/master/Swift/FullscreenVRPlayer%20Example) - Use this class to launch VR in a new fullsreen controller
 - [VRPlayer](https://github.com/OmniVirt/iOS-VR-Example/tree/master/Swift/VRPlayer%20Example) - Use this class to embed VR into your existing controller
