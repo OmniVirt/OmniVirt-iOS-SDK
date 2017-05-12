@@ -24,8 +24,6 @@ Visit [OmniVirt Website](https://www.omnivirt.com/) to upload content and create
 - [Objective-C VR Player / Monetization](https://github.com/OmniVirt/iOS-VR-Example/tree/master/Examples/Objective%20C/VRKitExample)
 - [Cardboard QR Code Reader](https://github.com/OmniVirt/iOS-VR-Example/tree/master/Examples/Scan%20QR%20Code/VRKitExample)
 
-- [FullscreenVRPlayer](https://github.com/OmniVirt/iOS-VR-Example/tree/master/Swift/FullscreenVRPlayer%20Example) - Use this class to launch VR in a new fullsreen controller
-- [VRPlayer](https://github.com/OmniVirt/iOS-VR-Example/tree/master/Swift/VRPlayer%20Example) - Use this class to embed VR into your existing controller
 
 ## Upload and test your VR content
 
