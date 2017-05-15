@@ -140,12 +140,6 @@
     player.cardboard = isCardboard ? ModeOn : ModeOff;
 }
 
-- (IBAction)switchProduction: (UISwitch *)sender {
-    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    [userDefaults setBool:sender.isOn forKey:@"VRKIT_ENABLE_STAGING"];
-    [userDefaults synchronize];
-}
-
 // MARK: - TextField Delegate
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {

@@ -126,12 +126,6 @@ class MainTableViewController: UITableViewController, UITextFieldDelegate, VRPla
         player.cardboard = isCardboard ? .On : .Off
     }
     
-    @IBAction func switchStaging(sender: UISwitch) {
-        let userDefaults = UserDefaults.standard
-        userDefaults.set(sender.isOn, forKey: "VRKIT_ENABLE_STAGING")
-        userDefaults.synchronize()
-    }
-    
     // MARK: - TextField Delegate
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
