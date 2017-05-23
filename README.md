@@ -1,102 +1,72 @@
-# Virtual Reality Embed Player and Monetization for iOS Apps
+# VR Player and Monetization for App Developers
 
-You can use OmniVirt technology for
-- VR App: [Create VR ad space and earn revenues using your in-house VR campaigns or OmniVirt sourced demands](#create-vr-ad-space-and-run-your-ad-campaigns)
-- VR App: [Embed your VR content into your app](#embed-your-vr-content-into-your-app)
-- Promote your VR campaigns to gain viewerships across OmniVirt Network and the web.
+OmniVirt makes the leading player for 360 video experiences across mobile and desktop. 
+Upload your 360 content to OmniVirt and serve it into your app. 
+
+The OmniVirt advertising platform enables developers and publishers to monetize their apps with engaging VR content.
+Simply integrate the OmniVirt SDK into your iOS, Android or Web application and get paid for presenting sponsored 360 video experiences to your users. Backfill your inventory with premium CPM experiences from OmniVirt’s network of advertisers. We support both 360° and 2D video ads inside VR apps.
 
 Contact us for more info at [contact@omnivirt.com](mailto:contact@omnivirt.com).
-Visit [OmniVirt Website](https://www.omnivirt.com/) to upload content and create ad space.
+Visit [www.omnivirt.com](https://www.omnivirt.com/) to upload content or create ad space.
 
 
-# Embed your VR content into your app
+## Add the OmniVirt SDK to your app
 
-1. Clone iOS VR example project into your machine. 
+### Using CocoaPods
+CocoaPods is the most conventient way to add the OmniVirt SDK to your app.
+Check out [www.cocoapods.org](www.cocoapods.org) for more information.
+
+1. Add the following line to your podfile
    <pre>
-   git clone https://github.com/OmniVirt/iOS-VR-Example
+   pod 'OmniVirtSDK'
    </pre>
-2. Open iOS *VRKitExample/VRKitExample.xcodeproj* project using XCode
-3. Build and run
-
-## More example
-
-- [Swift VR Player / Monetization](https://github.com/OmniVirt/iOS-VR-Example/tree/master/Examples/Swift/VRKitExample)
-- [Objective-C VR Player / Monetization](https://github.com/OmniVirt/iOS-VR-Example/tree/master/Examples/Objective%20C/VRKitExample)
-- [Cardboard QR Code Reader](https://github.com/OmniVirt/iOS-VR-Example/tree/master/Examples/Scan%20QR%20Code/VRKitExample)
-
-
-## Upload and test your VR content
-
-Please upload your VR/360-degree photo or video at [OmniVirt](https://www.omnivirt.com/).
-Once you have your content ID, please insert it as part of player.load's parameter.
-
+2. Run this in your build directory to add 
    <pre>
-   player.load(withContentID: 24); // Replace 24 into your Content ID.
-   </pre>
-## Tutorial - Let's embed your content into your controller
-
-VRKitExample project mainly consists of VRKit.framework and ViewController code.
-The program is very simple and coded in very straightforward way.
-This tutorial shows you how to make fullscreen cardboard app within minutes.
-
-Inside ViewController, you will find View created under "Player" named with VRPlayer class. **If you plan to use VRPlayer in both landscape and portrait orientation, please make sure to set your controller to allows both orientation**. Gyroscope may not give proper value if device orientation is not supported and the phone is rotated.
-
-![alt tag](https://s3.amazonaws.com/adsoptimal-3dx-assets/manual_upload/wiki/step+1+-+Check+VRPlayer+View.png)
-
-Try making this VRPlayer stretching into fullscreen by adding Vertical constraint with zero value.
-
-![alt tag](https://s3.amazonaws.com/adsoptimal-3dx-assets/manual_upload/wiki/step+2+-+Make+Player+fullscreen.png)
-
-Replace your OmniVirt content ID and insert "player.cardboard = Mode.ON;" inside playerLoaded function.
-
-![alt tag](https://s3.amazonaws.com/adsoptimal-3dx-assets/manual_upload/wiki/step+3+-+Turn+cardboard+mode+on.png)
-
-## Output
-
-![alt tag](https://s3.amazonaws.com/adsoptimal-3dx-assets/manual_upload/wiki/cardboard+output.png)
-
-## Create VR player without storyboard.
-
-You can create the embed player without a Storyboard by using below codes.
-
-   <pre>
-   let _player = VRPlayer.create();
-   _player.load(withContentID: 24); // Replace 24 with your Content ID
-   _player.frame = self.view.frame;
-   self.view.addSubview(_player);
-   _player.layoutSubviews();
+   $ pod install
    </pre>
 
-# Create VR ad space and run your ad campaigns
 
-   Sell your own campaigns and dynamically insert campaign with no hard-coding/development work required into your app.
-   Backfill your inventory with premium CPM experiences from OmniVirt’s network of advertisers. We support both 360° and 2D video ads inside VR apps.
+## Use the OmniVirt Player
 
-   Please sign up for OmniVirt account to create Ad Space and replace your Ad Space ID below.
+### Display your own VR content
+1. Sign up for an account at [OmniVirt](www.omnivirt.com)
+2. Upload your VR/360-degree photo or video at [OmniVirt](https://www.omnivirt.com/).
+3. OmniVirt will assign an ID to your content as part of the upload. Copy the content ID and pass it to the VRPlayer's load method.
 
    <pre>
-   var omnivirtAd: VRAd? = nil;
-   override func viewDidLoad() {
-     ...
-     // Initialization: Replace 1 with your Ad Space ID.
-     self.omnivirtAd = VRAd.create(withAdSpaceID: 1, andViewController: self, andListener: self);
-     ...
-   }
-   @IBAction func startAd(_ sender: Any) {
-     ...
-     if (startAdButton.titleLabel?.text == "Load Ad") {
-       // Loading: Use this method to request the ad.
-       self.omnivirtAd?.load();
-     }
-     ...
-     ...
-     if (startAdButton.titleLabel?.text == "Start Ad") {
-       // Show ad: Once the ad is ready, use this method to display it.
-       self.omnivirtAd?.show(withCardboardMode: Mode.OFF);
-     }
-     ...
-   }
-   // Use this method to listen if the ad is in loading, ready, showing, completed, or failed status.
+   player.load(withContentID: 0000); // Replace 0000 with your Content ID.
+   </pre>
+
+### Monetize your app with sponsored VR content
+
+1. Sign up for an account at [OmniVirt](www.omnivirt.com)
+2. Create one or more Ad Spaces for your app (for each Ad Space you can select different content and will get separate reporting)
+3. Select what content to run in each Ad Space (e.g. OmniVirt's network ads)
+4. Add one or more instances of the OmniVirt VRPlayer to your app (one for each Ad Space)
+
+## Tutorials
+### Add a VRPlayer programmatically
+To add a VRPlayer to your view, simply create a new VRPlayer instance. You can set the player's frame to any size you like and use it in portrait or landscape mode.
+   <pre>
+   let vrPlayer = VRPlayer.create();
+   vrPlayer.load(withContentID: 24); // Replace 24 with your Content ID
+   vrPlayer.frame = self.view.frame;
+   self.view.addSubview(vrPlayer);
+   vrPlayer.layoutSubviews();
+   </pre>
+
+### Add an Ad Space programmatically
+To add an Ad Space in your app, create a new instance of the VRAd object to your view controller.
+   <pre>
+   let myAd = VRAd.create(withAdSpaceID: 1000, andViewController: self, andListener: self) 
+   //replace 1000 with your Ad Space ID
+   </pre>
+To load an ad from the network for you Ad Space call the load method
+   <pre>
+   myAd.load()
+   </pre>
+You can listen to the ad state to check when the ad is ready to display
+   <pre>
    func adStatusChanged(withAd ad: VRAd, andStatus status: AdState) {
      switch (status) {
        case AdState.NONE:
@@ -116,12 +86,36 @@ You can create the embed player without a Storyboard by using below codes.
      }
    }
    </pre>
+Once the ad is ready to display you can call the show method on the ad.
+    <pre>
+	myAd.show(withCardboardMode: Mode.OFF)
+   </pre>
+   
+### Use Storyboard to add a VRPlayer
 
-# About OmniVirt
+This tutorial shows you how to make fullscreen cardboard app within minutes.
 
-OmniVirt hosts and distributes VR/360 content cross-platform.
-With one upload, your virtual reality content can be displayed in any platforms and formats.
-To learn more about all OmniVirt services, please visit our [website](https://www.omnivirt.com).
+Inside the ViewController of the sample app you will find the Player view, which subclasses VRPlayer. **If you plan to use VRPlayer in both landscape and portrait orientation, please make sure to set your controller to allows both orientation**. The gyroscope may not give you an accurate reading if the device orientation is not supported and the phone is rotated.
+
+![alt tag](https://s3.amazonaws.com/adsoptimal-3dx-assets/manual_upload/wiki/step+1+-+Check+VRPlayer+View.png)
+
+Try to make the VRPlayer fill the full screen by setting the vertical constraint to zero.
+
+![alt tag](https://s3.amazonaws.com/adsoptimal-3dx-assets/manual_upload/wiki/step+2+-+Make+Player+fullscreen.png)
+
+Replace your OmniVirt content ID and insert "player.cardboard = Mode.ON;" inside the playerLoaded() method.
+
+![alt tag](https://s3.amazonaws.com/adsoptimal-3dx-assets/manual_upload/wiki/step+3+-+Turn+cardboard+mode+on.png)
+
+### Result
+
+![alt tag](https://s3.amazonaws.com/adsoptimal-3dx-assets/manual_upload/wiki/cardboard+output.png)
+
+### Example Apps
+
+- [Swift VR Player / Monetization](https://github.com/OmniVirt/iOS-VR-Example/tree/master/Examples/Swift/VRKitExample)
+- [Objective-C VR Player / Monetization](https://github.com/OmniVirt/iOS-VR-Example/tree/master/Examples/Objective%20C/VRKitExample)
+- [Cardboard QR Code Reader](https://github.com/OmniVirt/iOS-VR-Example/tree/master/Examples/Scan%20QR%20Code/VRKitExample)
 
 # Questions?
 
