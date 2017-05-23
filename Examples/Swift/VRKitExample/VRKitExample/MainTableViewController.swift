@@ -26,7 +26,7 @@ class MainTableViewController: UITableViewController, UITextFieldDelegate, VRPla
         super.viewDidLoad()
 
         let userDefaults = UserDefaults.standard
-        userDefaults.removeObject(forKey: "VRKIT_ENABLE_STAGING")
+        userDefaults.set(true, forKey: "VRKIT_ENABLE_STAGING")
         userDefaults.synchronize()
     }
 

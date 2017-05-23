@@ -7,14 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6FE2A3C71ED4B27C00F38C86 /* VRKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FE2A3C41ED4B24D00F38C86 /* VRKit.framework */; };
+		6FE2A3C81ED4B27C00F38C86 /* VRKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6FE2A3C41ED4B24D00F38C86 /* VRKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F3094F901EB1D61A006E15CE /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3094F8F1EB1D61A006E15CE /* MainTableViewController.swift */; };
 		F3FDF7F11EA9F95300DF9701 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FDF7F01EA9F95300DF9701 /* AppDelegate.swift */; };
 		F3FDF7F61EA9F95300DF9701 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3FDF7F41EA9F95300DF9701 /* Main.storyboard */; };
 		F3FDF7F81EA9F95300DF9701 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3FDF7F71EA9F95300DF9701 /* Assets.xcassets */; };
 		F3FDF7FB1EA9F95300DF9701 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3FDF7F91EA9F95300DF9701 /* LaunchScreen.storyboard */; };
-		F3FDF8111EAC4FAC00DF9701 /* VRKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FDF8101EAC4FAC00DF9701 /* VRKit.framework */; };
-		F3FDF8131EAC4FCF00DF9701 /* VRKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3FDF8101EAC4FAC00DF9701 /* VRKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6FE2A3C31ED4B24D00F38C86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FE2A3BD1ED4B24D00F38C86 /* VRKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6F9F7B281D889582001EF3FF;
+			remoteInfo = VRKit;
+		};
+		6FE2A3C51ED4B24D00F38C86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FE2A3BD1ED4B24D00F38C86 /* VRKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 6F9F7B311D889582001EF3FF;
+			remoteInfo = VRKitTests;
+		};
+		6FE2A3C91ED4B27C00F38C86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6FE2A3BD1ED4B24D00F38C86 /* VRKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 6F9F7B271D889582001EF3FF;
+			remoteInfo = VRKit;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		F3FDF8121EAC4FC200DF9701 /* Embed Frameworks */ = {
@@ -23,7 +47,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F3FDF8131EAC4FCF00DF9701 /* VRKit.framework in Embed Frameworks */,
+				6FE2A3C81ED4B27C00F38C86 /* VRKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -31,6 +55,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6FE2A3BD1ED4B24D00F38C86 /* VRKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VRKit.xcodeproj; path = "../../../../vrkit-ios/VRKit.xcodeproj"; sourceTree = "<group>"; };
 		F3094F8F1EB1D61A006E15CE /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		F3FDF7ED1EA9F95300DF9701 /* VRKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VRKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3FDF7F01EA9F95300DF9701 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,7 +63,6 @@
 		F3FDF7F71EA9F95300DF9701 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3FDF7FA1EA9F95300DF9701 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3FDF7FC1EA9F95300DF9701 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F3FDF8101EAC4FAC00DF9701 /* VRKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VRKit.framework; path = VRKitExample/VRKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,16 +70,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3FDF8111EAC4FAC00DF9701 /* VRKit.framework in Frameworks */,
+				6FE2A3C71ED4B27C00F38C86 /* VRKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6FE2A3BE1ED4B24D00F38C86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6FE2A3C41ED4B24D00F38C86 /* VRKit.framework */,
+				6FE2A3C61ED4B24D00F38C86 /* VRKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		F3FDF7E41EA9F95300DF9701 = {
 			isa = PBXGroup;
 			children = (
+				6FE2A3BD1ED4B24D00F38C86 /* VRKit.xcodeproj */,
 				F3FDF7EF1EA9F95300DF9701 /* VRKitExample */,
 				F3FDF7EE1EA9F95300DF9701 /* Products */,
 				F3FDF8041EA9FDB500DF9701 /* Frameworks */,
@@ -86,7 +120,6 @@
 		F3FDF8041EA9FDB500DF9701 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F3FDF8101EAC4FAC00DF9701 /* VRKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -107,6 +140,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				6FE2A3CA1ED4B27C00F38C86 /* PBXTargetDependency */,
 			);
 			name = VRKitExample;
 			productName = VRKitExample;
@@ -125,7 +159,7 @@
 				TargetAttributes = {
 					F3FDF7EC1EA9F95300DF9701 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = F299NB56CU;
+						DevelopmentTeam = V5R9MKAP9P;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -141,12 +175,35 @@
 			mainGroup = F3FDF7E41EA9F95300DF9701;
 			productRefGroup = F3FDF7EE1EA9F95300DF9701 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 6FE2A3BE1ED4B24D00F38C86 /* Products */;
+					ProjectRef = 6FE2A3BD1ED4B24D00F38C86 /* VRKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F3FDF7EC1EA9F95300DF9701 /* VRKitExample */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		6FE2A3C41ED4B24D00F38C86 /* VRKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = VRKit.framework;
+			remoteRef = 6FE2A3C31ED4B24D00F38C86 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		6FE2A3C61ED4B24D00F38C86 /* VRKitTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = VRKitTests.xctest;
+			remoteRef = 6FE2A3C51ED4B24D00F38C86 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F3FDF7EB1EA9F95300DF9701 /* Resources */ = {
@@ -188,6 +245,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6FE2A3CA1ED4B27C00F38C86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VRKit;
+			targetProxy = 6FE2A3C91ED4B27C00F38C86 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F3FDF7F41EA9F95300DF9701 /* Main.storyboard */ = {
@@ -305,9 +370,9 @@
 		F3FDF8001EA9F95300DF9701 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = F299NB56CU;
+				DEVELOPMENT_TEAM = V5R9MKAP9P;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -315,6 +380,7 @@
 					"$(PROJECT_DIR)/VRKitExample",
 				);
 				INFOPLIST_FILE = VRKitExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.omnivirt.VRKitExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -325,9 +391,9 @@
 		F3FDF8011EA9F95300DF9701 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = F299NB56CU;
+				DEVELOPMENT_TEAM = V5R9MKAP9P;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -335,6 +401,7 @@
 					"$(PROJECT_DIR)/VRKitExample",
 				);
 				INFOPLIST_FILE = VRKitExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.omnivirt.VRKitExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
