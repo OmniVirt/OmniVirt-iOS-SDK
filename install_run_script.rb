@@ -24,7 +24,7 @@ end
 puts path_to_project
 
 if path_to_project.nil?
-	raise "Please change the current directory to root of the Xcode project and then run `pod install` to install OmniVirtSDK."
+	warn "Please change the current directory to root of the Xcode project and then run `pod install` to install an OmniVirtSDK build phase script. Otherwise, please follow the instruction from goo.gl/bsX8kn to install the build phase script."
 else
 	project = Xcodeproj::Project.open(path_to_project)
 	main_target = project.targets.first
