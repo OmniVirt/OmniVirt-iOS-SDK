@@ -11,9 +11,6 @@ end
 path_to_xcode_build_script = "#{File.dirname(__FILE__)}/strip-frameworks.sh"
 xcode_build_script_name = 'Strip VRKit Framework'
 
-puts Dir.pwd
-puts ARGV[0]
-
 path_to_spec = ARGV[0] # Passed from podspec using path variable
 
 if path_to_spec.start_with?('/private/tmp/CocoaPods/Lint') or path_to_spec.end_with?('iOS-VR-Example/OmniVirtSDK.podspec')
@@ -21,7 +18,7 @@ if path_to_spec.start_with?('/private/tmp/CocoaPods/Lint') or path_to_spec.end_w
   puts 'CocoaPods linting, bail now before fail'
   exit 0
 else
-  path_to_project = Dir.glob("#{Dir.pwd}/*.xcodeproj")[0]
+  path_to_project = Dir.glob("#{ARGV[1]}/*.xcodeproj")[0]
 end
 
 puts path_to_project
