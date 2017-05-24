@@ -3,7 +3,7 @@
 require 'pathname'
 require 'xcodeproj'
 
-path_to_xcode_build_script = '"${SRCROOT}/Frameworks/strip-frameworks.sh"'
+path_to_xcode_build_script = '"${SRCROOT}/strip-frameworks.sh"'
 xcode_build_script_name = 'Strip VRKit Framework'
 
 puts Dir.pwd

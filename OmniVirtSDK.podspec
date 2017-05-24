@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
   spec.platform = :ios, "8.0"
   spec.requires_arc = true
   spec.source = { git: "https://github.com/OmniVirt/iOS-VR-Example.git", tag: "v1.0.0", submodules: true }
-  spec.vendored_frameworks = "Frameworks/VRKit.framework"
+  spec.ios.vendored_frameworks = "VRKit.framework"
 
-  spec.prepare_command = "gem install xcodeproj; ruby Frameworks/install_run_script.rb '#{path}';"
+  spec.prepare_command = "gem install xcodeproj; ruby install_run_script.rb '#{path}';"
 end
