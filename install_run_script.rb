@@ -16,10 +16,8 @@ puts ARGV[0]
 
 path_to_spec = ARGV[0] # Passed from podspec using path variable
 
-if path_to_spec.start_with?('/private/tmp/CocoaPods/Lint')
+if path_to_spec.start_with?('/private/tmp/CocoaPods/Lint') or path_to_spec.end_with?('iOS-VR-Example/OmniVirtSDK.podspec')
   # CocoaPods Lint
-  # e.g. /private/tmp/CocoaPods/Lint/Pods/Local Podspecs/POD_NAME.podspec
-
   puts 'CocoaPods linting, bail now before fail'
   exit 0
 else
