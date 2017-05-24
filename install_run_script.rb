@@ -1,7 +1,12 @@
 #!/usr/bin/env ruby
 
 require 'pathname'
-require 'xcodeproj'
+
+begin
+	require 'xcodeproj'
+rescue
+	raise "We couldn't install xcodeproj on your machine. Please run `gem install xcodeproj` before trying to install OmniVirtSDK."
+end
 
 path_to_xcode_build_script = "#{File.dirname(__FILE__)}/strip-frameworks.sh"
 xcode_build_script_name = 'Strip VRKit Framework'
@@ -24,7 +29,7 @@ end
 puts path_to_project
 
 if path_to_project.nil?
-	warn "Please change the current directory to root of the Xcode project and then run `pod install` to install an OmniVirtSDK build phase script. Otherwise, please follow the instruction from goo.gl/bsX8kn to install the build phase script."
+	raise "Please change the current directory to root of the Xcode project and then run `pod install` to install an OmniVirtSDK build phase script."
 else
 	project = Xcodeproj::Project.open(path_to_project)
 	main_target = project.targets.first
