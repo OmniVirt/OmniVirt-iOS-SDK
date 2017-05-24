@@ -23,7 +23,7 @@ if path_to_spec.start_with?('/private/tmp/CocoaPods/Lint')
   puts 'CocoaPods linting, bail now before fail'
   exit 0
 else
-  path_to_project = Dir.glob("#{Dir.getwd}/*.xcodeproj")[0]
+  path_to_project = Dir.glob("#{Dir.pwd}/*.xcodeproj")[0]
 end
 
 puts path_to_project
