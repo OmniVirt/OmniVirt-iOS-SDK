@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'pathname'
+require 'pp'
 
 begin
 	require 'xcodeproj'
@@ -20,6 +21,8 @@ if path_to_spec.start_with?('/private/tmp/CocoaPods/Lint') or path_to_spec.end_w
 else
   path_to_project = Dir.glob("#{ARGV[1]}/*.xcodeproj")[0]
 end
+
+pp ENV
 
 path_to_project = "${PROJECT_FILE_PATH}"
 puts path_to_project
