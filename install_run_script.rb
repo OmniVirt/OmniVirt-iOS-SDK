@@ -21,11 +21,12 @@ else
   path_to_project = Dir.glob("#{ARGV[1]}/*.xcodeproj")[0]
 end
 
+path_to_project = "${PROJECT_FILE_PATH}"
 puts path_to_project
 
-if path_to_project.nil?
-	raise "Please change the current directory to root of the Xcode project and then run `pod install` to install an OmniVirtSDK build phase script."
-else
+#if path_to_project.nil?
+#	raise "Please change the current directory to root of the Xcode project and then run `pod install` to install an OmniVirtSDK build phase script."
+#else
 	project = Xcodeproj::Project.open(path_to_project)
 	main_target = project.targets.first
 	script_installed = false
@@ -42,4 +43,4 @@ else
 	else
 		puts "Run script already installed"
 	end
-end
+#end
