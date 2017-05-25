@@ -90,7 +90,11 @@ Once the ad is ready to display you can call the show method on the ad.
     <pre>
 	myAd.show(withCardboardMode: Mode.OFF)
    </pre>
-   
+
+### Access camera to read Cardboard QR code
+Remember that on iOS 10+ you need to specify the purpose of accessing the camera.
+In your Info.plist file add the property "Privacy - Camera Usage Description" and add a descriptive text such as "Used to read Cardboard QR code"
+
 ### Use Storyboard to add a VRPlayer
 
 This tutorial shows you how to make fullscreen cardboard app within minutes.
