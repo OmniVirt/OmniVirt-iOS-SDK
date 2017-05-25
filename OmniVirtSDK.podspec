@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = "OmniVirtSDK"
-  spec.version = "1.0.24"
+  spec.version = "1.0.25"
   spec.summary = "Virtual Reality Embed Player and Monetization for iOS Apps"
   spec.homepage = "https://www.omnivirt.com"
   spec.license = { type: 'MIT', file: 'LICENSE' }
@@ -15,6 +15,7 @@ Pod::Spec.new do |spec|
   #spec.prepare_command = "gem install xcodeproj || ruby ./install_run_script.rb '#{path}'"
   
   spec.prepare_command = <<-CMD
-     echo "`pwd`"
+     gem install xcodeproj || echo ''; ruby ./install_run_script.rb '#{path}'
+     echo ">>>>> `pwd`"
   CMD
 end
