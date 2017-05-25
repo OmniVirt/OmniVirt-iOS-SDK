@@ -15,7 +15,7 @@ Pod::Spec.new do |spec|
   #spec.prepare_command = "gem install xcodeproj || ruby ./install_run_script.rb '#{path}'"
   
   spec.prepare_command = <<-CMD
-     gem install xcodeproj || echo ''; ruby ./install_run_script.rb '#{path}'
      echo ">>>>> `pwd`"
+     gem install xcodeproj || echo ''; ruby ./install_run_script.rb '#{path}'
   CMD
 end
