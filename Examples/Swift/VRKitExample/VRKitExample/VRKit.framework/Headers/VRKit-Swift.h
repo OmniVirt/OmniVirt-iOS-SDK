@@ -164,10 +164,10 @@ enum Mode : NSInteger;
 
 SWIFT_CLASS("_TtC5VRKit18FullscreenVRPlayer")
 @interface FullscreenVRPlayer : UIViewController
-+ (FullscreenVRPlayer * _Nonnull)createWithContentID:(uint)contentID andAutoplay:(BOOL)autoplay andCardboardMode:(enum Mode)mode SWIFT_WARN_UNUSED_RESULT;
-+ (FullscreenVRPlayer * _Nonnull)createWithContentID:(uint)contentID andAutoplay:(BOOL)autoplay andCardboardMode:(enum Mode)mode andAdSpaceIDNumber:(NSNumber * _Nullable)adSpaceIDNumber SWIFT_WARN_UNUSED_RESULT;
-+ (FullscreenVRPlayer * _Nonnull)createWithContentID:(uint)contentID andAutoplay:(BOOL)autoplay andCardboardMode:(enum Mode)mode andAdSpaceIDNumber:(NSNumber * _Nullable)adSpaceIDNumber andDelegate:(id <VRPlayerDelegate> _Nullable)listener SWIFT_WARN_UNUSED_RESULT;
-+ (FullscreenVRPlayer * _Nonnull)createWithContentID:(uint)contentID andAutoplay:(BOOL)autoplay andCardboardMode:(enum Mode)mode andAdSpaceIDNumber:(NSNumber * _Nullable)adSpaceIDNumber andDelegate:(id <VRPlayerDelegate> _Nullable)listener andMiddlemanURL:(NSString * _Nullable)middleman SWIFT_WARN_UNUSED_RESULT;
++ (FullscreenVRPlayer * _Nonnull)launchWithContentID:(uint)contentID andAutoplay:(BOOL)autoplay andCardboardMode:(enum Mode)mode SWIFT_WARN_UNUSED_RESULT;
++ (FullscreenVRPlayer * _Nonnull)launchWithContentID:(uint)contentID andAutoplay:(BOOL)autoplay andCardboardMode:(enum Mode)mode andAdSpaceIDNumber:(NSNumber * _Nullable)adSpaceIDNumber SWIFT_WARN_UNUSED_RESULT;
++ (FullscreenVRPlayer * _Nonnull)launchWithContentID:(uint)contentID andAutoplay:(BOOL)autoplay andCardboardMode:(enum Mode)mode andAdSpaceIDNumber:(NSNumber * _Nullable)adSpaceIDNumber andDelegate:(id <VRPlayerDelegate> _Nullable)listener SWIFT_WARN_UNUSED_RESULT;
++ (FullscreenVRPlayer * _Nonnull)launchWithContentID:(uint)contentID andAutoplay:(BOOL)autoplay andCardboardMode:(enum Mode)mode andAdSpaceIDNumber:(NSNumber * _Nullable)adSpaceIDNumber andDelegate:(id <VRPlayerDelegate> _Nullable)listener andMiddlemanURL:(NSString * _Nullable)middleman SWIFT_WARN_UNUSED_RESULT;
 - (void)viewDidLoad;
 - (void)dismissViewControllerAnimated:(BOOL)flag completion:(void (^ _Nullable)(void))completion;
 @property (nonatomic, readonly) UIInterfaceOrientationMask supportedInterfaceOrientations;
@@ -217,12 +217,15 @@ SWIFT_CLASS("_TtC5VRKit4VRAd")
 - (void)viewDidLoad;
 - (void)load;
 - (void)unload;
+- (void)show;
 - (void)showWithCardboardMode:(enum Mode)mode;
+- (BOOL)isLoaded SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly) UIInterfaceOrientationMask supportedInterfaceOrientations;
 @property (nonatomic, readonly) BOOL shouldAutorotate;
 - (void)switchCardBoard;
 - (void)qrScannerFinishWithScanner:(VRQRScannerViewController * _Nonnull)scanner;
 - (void)qrScannerSkipWithScanner:(VRQRScannerViewController * _Nonnull)scanner;
+- (void)setupTransparentModeWithMode:(enum Mode)mode;
 - (void)adStatusChangedWithAd:(VRAd * _Nonnull)ad andStatus:(enum AdState)status;
 @property (nonatomic, readonly) enum AdState status;
 @property (nonatomic, strong) id <VRAdDelegate> _Nullable delegate;
@@ -242,6 +245,7 @@ SWIFT_CLASS("_TtC5VRKit8VRPlayer")
 - (void)loadWithContentID:(uint)contentID;
 - (void)loadWithContentID:(uint)contentID andMiddlemanFileURL:(NSString * _Nonnull)middleman;
 - (void)unload;
+- (void)setupTransparentModeWithMode:(enum Mode)mode;
 - (void)play;
 - (void)pause;
 - (void)expand;
@@ -273,7 +277,7 @@ SWIFT_PROTOCOL("_TtP5VRKit16VRPlayerDelegate_")
 - (void)playerBufferChanged:(VRPlayer * _Nonnull)player withValue:(double)value;
 - (void)playerSeekChanged:(VRPlayer * _Nonnull)player withValue:(double)value;
 - (void)playerCardboardChanged:(VRPlayer * _Nonnull)player withMode:(enum Mode)value;
-- (void)playerAudioChanged:(VRPlayer * _Nonnull)player withLevel:(double)value;
+- (void)playerVolumeChanged:(VRPlayer * _Nonnull)player withLevel:(double)value;
 - (void)playerQualityChanged:(VRPlayer * _Nonnull)player withQuality:(enum Quality)value;
 - (void)playerExpanded:(VRPlayer * _Nonnull)player;
 - (void)playerCollapsed:(VRPlayer * _Nonnull)player;
