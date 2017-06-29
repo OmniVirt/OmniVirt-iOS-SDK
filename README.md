@@ -10,8 +10,8 @@ Visit [www.omnivirt.com](https://www.omnivirt.com/) to upload content or create 
 
 ### Example Apps
 
-- [OmniVirt VR Player](https://github.com/OmniVirt/OmniVirtVRPlayer-iOS-Example)
-- [OmniVirt Ad Network](https://github.com/OmniVirt/OmniVirtAdNetwork-iOS-Example)
+- [OmniVirt VR Player for iOS](https://github.com/OmniVirt/OmniVirtVRPlayer-iOS-Example)
+- [OmniVirt Ad Network for iOS](https://github.com/OmniVirt/OmniVirtAdNetwork-iOS-Example)
 
 # Questions?
 
