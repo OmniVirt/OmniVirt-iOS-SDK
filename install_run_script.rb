@@ -9,7 +9,7 @@ rescue
 end
 
 path_to_xcode_build_script = "#{File.dirname(__FILE__)}/strip-frameworks.sh"
-xcode_build_script_name = 'Strip VRKit Framework'
+xcode_build_script_name = 'Strip OmniVirtSDK Framework'
 
 path_to_spec = ARGV[0] # Passed from podspec using path variable
 

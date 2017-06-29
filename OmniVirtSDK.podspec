@@ -13,5 +13,5 @@ Pod::Spec.new do |spec|
   spec.source = { git: "https://github.com/OmniVirt/OmniVirt-iOS-SDK.git", tag: "v#{spec.version}", submodules: true }
   spec.ios.vendored_frameworks = "OmniVirtSDK.framework"
 
-  spec.prepare_command = "gem install xcodeproj || echo ''; ruby ./install_run_script.rb '#{path}' '#{working_path}'"
+  #spec.prepare_command = "gem install xcodeproj || echo ''; ruby ./install_run_script.rb '#{path}' '#{working_path}'"
 end
