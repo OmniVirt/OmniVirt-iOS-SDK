@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6FE2A3C71ED4B27C00F38C86 /* VRKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FE2A3C41ED4B24D00F38C86 /* VRKit.framework */; };
-		6FE2A3C81ED4B27C00F38C86 /* VRKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6FE2A3C41ED4B24D00F38C86 /* VRKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		074C249F1F047FF5000D22D3 /* OmniVirtSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 074C249E1F047FF5000D22D3 /* OmniVirtSDK.framework */; };
+		074C24A01F048002000D22D3 /* OmniVirtSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 074C249E1F047FF5000D22D3 /* OmniVirtSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F3094F901EB1D61A006E15CE /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3094F8F1EB1D61A006E15CE /* MainTableViewController.swift */; };
 		F3FDF7F11EA9F95300DF9701 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FDF7F01EA9F95300DF9701 /* AppDelegate.swift */; };
 		F3FDF7F61EA9F95300DF9701 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3FDF7F41EA9F95300DF9701 /* Main.storyboard */; };
@@ -47,7 +47,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				6FE2A3C81ED4B27C00F38C86 /* VRKit.framework in Embed Frameworks */,
+				074C24A01F048002000D22D3 /* OmniVirtSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -55,6 +55,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		074C249E1F047FF5000D22D3 /* OmniVirtSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OmniVirtSDK.framework; path = VRKitExample/OmniVirtSDK.framework; sourceTree = "<group>"; };
 		6FE2A3BD1ED4B24D00F38C86 /* VRKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = VRKit.xcodeproj; path = "../../../../vrkit-ios/VRKit.xcodeproj"; sourceTree = "<group>"; };
 		F3094F8F1EB1D61A006E15CE /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		F3FDF7ED1EA9F95300DF9701 /* VRKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VRKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,7 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6FE2A3C71ED4B27C00F38C86 /* VRKit.framework in Frameworks */,
+				074C249F1F047FF5000D22D3 /* OmniVirtSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,6 +121,7 @@
 		F3FDF8041EA9FDB500DF9701 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				074C249E1F047FF5000D22D3 /* OmniVirtSDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -159,7 +161,7 @@
 				TargetAttributes = {
 					F3FDF7EC1EA9F95300DF9701 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = V5R9MKAP9P;
+						DevelopmentTeam = 35UAU2ZP8G;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -372,7 +374,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = V5R9MKAP9P;
+				DEVELOPMENT_TEAM = 35UAU2ZP8G;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -393,7 +395,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = V5R9MKAP9P;
+				DEVELOPMENT_TEAM = 35UAU2ZP8G;
 				ENABLE_BITCODE = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

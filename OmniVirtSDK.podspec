@@ -1,8 +1,8 @@
 working_path = Dir.pwd
 Pod::Spec.new do |spec|
   spec.name = "OmniVirtSDK"
-  spec.version = "1.1.0"
-  spec.summary = "Virtual Reality Embed Player and Monetization for iOS Apps"
+  spec.version = "1.2.0"
+  spec.summary = "360° Virtual Reality Embed Player and Monetization for iOS Apps"
   spec.homepage = "https://www.omnivirt.com"
   spec.license = { type: 'MIT', file: 'LICENSE' }
   spec.authors = { "OmniVirt Team" => 'contact@omnivirt.com' }
@@ -10,8 +10,8 @@ Pod::Spec.new do |spec|
 
   spec.platform = :ios, "8.0"
   spec.requires_arc = true
-  spec.source = { git: "https://github.com/OmniVirt/iOS-VR-Example.git", tag: "v#{spec.version}", submodules: true }
-  spec.ios.vendored_frameworks = "VRKit.framework"
+  spec.source = { git: "https://github.com/OmniVirt/OmniVirt-iOS-SDK.git", tag: "v#{spec.version}", submodules: true }
+  spec.ios.vendored_frameworks = "OmniVirtSDK.framework"
 
   spec.prepare_command = "gem install xcodeproj || echo ''; ruby ./install_run_script.rb '#{path}' '#{working_path}'"
 end

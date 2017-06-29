@@ -7,7 +7,7 @@
 //
 
 #import "MainTableViewController.h"
-#import "VRKit/VRKit.h"
+#import "OmniVirtSDK/OmniVirtSDK.h"
 
 @interface MainTableViewController () <UITextFieldDelegate, VRPlayerDelegate, VRAdDelegate>
 {
@@ -93,9 +93,9 @@
         FullscreenVRPlayer *fsplayer;
         if ([[NSScanner scannerWithString:adSpaceIdTextField.text] scanInt:nil]) {
             uint adSpaceId = [adSpaceIdTextField.text intValue];
-            fsplayer = [FullscreenVRPlayer createWithContentID:contentId andAutoplay:YES andCardboardMode:cardboardMode andAdSpaceIDNumber:[NSNumber numberWithInt: adSpaceId]];
+            fsplayer = [FullscreenVRPlayer launchWithContentID:contentId andAutoplay:YES andCardboardMode:cardboardMode andAdSpaceIDNumber:[NSNumber numberWithInt: adSpaceId]];
         } else {
-            fsplayer = [FullscreenVRPlayer createWithContentID:contentId andAutoplay:YES andCardboardMode:cardboardMode];
+            fsplayer = [FullscreenVRPlayer launchWithContentID:contentId andAutoplay:YES andCardboardMode:cardboardMode];
         }
         fsplayer.delegate = self;
         fsplayer.modalPresentationStyle = UIModalPresentationFullScreen;

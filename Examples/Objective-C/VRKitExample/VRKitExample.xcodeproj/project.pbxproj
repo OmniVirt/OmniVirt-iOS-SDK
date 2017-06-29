@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		074C24A21F04809D000D22D3 /* OmniVirtSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 074C24A11F04809D000D22D3 /* OmniVirtSDK.framework */; };
+		074C24A31F0480B5000D22D3 /* OmniVirtSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 074C24A11F04809D000D22D3 /* OmniVirtSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F33163211EB20C7A008E68ED /* MainTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F33163201EB20C7A008E68ED /* MainTableViewController.m */; };
 		F3FDF8271EAE0CBC00DF9701 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FDF8261EAE0CBC00DF9701 /* main.m */; };
 		F3FDF82A1EAE0CBC00DF9701 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FDF8291EAE0CBC00DF9701 /* AppDelegate.m */; };
 		F3FDF8301EAE0CBC00DF9701 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3FDF82E1EAE0CBC00DF9701 /* Main.storyboard */; };
 		F3FDF8321EAE0CBC00DF9701 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3FDF8311EAE0CBC00DF9701 /* Assets.xcassets */; };
 		F3FDF8351EAE0CBC00DF9701 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3FDF8331EAE0CBC00DF9701 /* LaunchScreen.storyboard */; };
-		F3FDF8421EAE105000DF9701 /* VRKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FDF83D1EAE101A00DF9701 /* VRKit.framework */; };
-		F3FDF8431EAE105000DF9701 /* VRKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3FDF83D1EAE101A00DF9701 /* VRKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +24,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F3FDF8431EAE105000DF9701 /* VRKit.framework in Embed Frameworks */,
+				074C24A31F0480B5000D22D3 /* OmniVirtSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -32,6 +32,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		074C24A11F04809D000D22D3 /* OmniVirtSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OmniVirtSDK.framework; path = VRKitExample/OmniVirtSDK.framework; sourceTree = "<group>"; };
 		F331631F1EB20C7A008E68ED /* MainTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainTableViewController.h; sourceTree = "<group>"; };
 		F33163201EB20C7A008E68ED /* MainTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainTableViewController.m; sourceTree = "<group>"; };
 		F3FDF8221EAE0CBC00DF9701 /* VRKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VRKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,7 +43,6 @@
 		F3FDF8311EAE0CBC00DF9701 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3FDF8341EAE0CBC00DF9701 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3FDF8361EAE0CBC00DF9701 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F3FDF83D1EAE101A00DF9701 /* VRKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VRKit.framework; path = VRKitExample/VRKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,7 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3FDF8421EAE105000DF9701 /* VRKit.framework in Frameworks */,
+				074C24A21F04809D000D22D3 /* OmniVirtSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,7 +101,7 @@
 		F3FDF83C1EAE101A00DF9701 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F3FDF83D1EAE101A00DF9701 /* VRKit.framework */,
+				074C24A11F04809D000D22D3 /* OmniVirtSDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

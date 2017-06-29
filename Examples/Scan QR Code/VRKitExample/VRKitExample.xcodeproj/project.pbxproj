@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		074C24A51F048130000D22D3 /* OmniVirtSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 074C24A41F048130000D22D3 /* OmniVirtSDK.framework */; };
+		074C24A61F04813B000D22D3 /* OmniVirtSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 074C24A41F048130000D22D3 /* OmniVirtSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F3094F901EB1D61A006E15CE /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3094F8F1EB1D61A006E15CE /* MainTableViewController.swift */; };
 		F3FDF7F11EA9F95300DF9701 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3FDF7F01EA9F95300DF9701 /* AppDelegate.swift */; };
 		F3FDF7F61EA9F95300DF9701 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3FDF7F41EA9F95300DF9701 /* Main.storyboard */; };
 		F3FDF7F81EA9F95300DF9701 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3FDF7F71EA9F95300DF9701 /* Assets.xcassets */; };
 		F3FDF7FB1EA9F95300DF9701 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3FDF7F91EA9F95300DF9701 /* LaunchScreen.storyboard */; };
-		F3FDF8111EAC4FAC00DF9701 /* VRKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3FDF8101EAC4FAC00DF9701 /* VRKit.framework */; };
-		F3FDF8131EAC4FCF00DF9701 /* VRKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F3FDF8101EAC4FAC00DF9701 /* VRKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,7 +23,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F3FDF8131EAC4FCF00DF9701 /* VRKit.framework in Embed Frameworks */,
+				074C24A61F04813B000D22D3 /* OmniVirtSDK.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -31,6 +31,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		074C24A41F048130000D22D3 /* OmniVirtSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OmniVirtSDK.framework; path = VRKitExample/OmniVirtSDK.framework; sourceTree = "<group>"; };
 		F3094F8F1EB1D61A006E15CE /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		F3FDF7ED1EA9F95300DF9701 /* VRKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VRKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3FDF7F01EA9F95300DF9701 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -38,7 +39,6 @@
 		F3FDF7F71EA9F95300DF9701 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3FDF7FA1EA9F95300DF9701 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F3FDF7FC1EA9F95300DF9701 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F3FDF8101EAC4FAC00DF9701 /* VRKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VRKit.framework; path = VRKitExample/VRKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3FDF8111EAC4FAC00DF9701 /* VRKit.framework in Frameworks */,
+				074C24A51F048130000D22D3 /* OmniVirtSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +86,7 @@
 		F3FDF8041EA9FDB500DF9701 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F3FDF8101EAC4FAC00DF9701 /* VRKit.framework */,
+				074C24A41F048130000D22D3 /* OmniVirtSDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

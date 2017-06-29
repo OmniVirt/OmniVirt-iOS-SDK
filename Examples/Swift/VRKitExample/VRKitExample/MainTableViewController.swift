@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import VRKit
+import OmniVirtSDK
 
 class MainTableViewController: UITableViewController, UITextFieldDelegate, VRPlayerDelegate, VRAdDelegate {
 
@@ -82,7 +82,7 @@ class MainTableViewController: UITableViewController, UITextFieldDelegate, VRPla
         let adSpaceId = uint(adSpaceIdTextField.text!)
         if contentId != nil {
             let cardboardMode: Mode = isCardboard ? .On : .Off;
-            let fsplayer = FullscreenVRPlayer.create(withContentID: contentId!, andAutoplay: true, andCardboardMode: cardboardMode, andAdSpaceID: adSpaceId, andDelegate: self)
+            let fsplayer = FullscreenVRPlayer.launch(withContentID: contentId!, andAutoplay: true, andCardboardMode: cardboardMode, andAdSpaceID: adSpaceId, andDelegate: self)
             fsplayer.modalPresentationStyle = .fullScreen
             self.present(fsplayer, animated: true) {
             }
@@ -176,7 +176,7 @@ class MainTableViewController: UITableViewController, UITextFieldDelegate, VRPla
         print("Cardboard changed to " + String(describing: value))
     }
     
-    func playerAudioChanged(_ player: VRPlayer, withLevel value:Double) {
+    func playerVolumeChanged(_ player: VRPlayer, withLevel value:Double) {
         print("Audio changed to " + String(value))
     }
     
