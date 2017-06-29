@@ -8,7 +8,7 @@ Simply integrate the OmniVirt SDK into your iOS, Android, Unity or Web applicati
 Contact us for more info at [contact@omnivirt.com](mailto:contact@omnivirt.com).
 Visit [www.omnivirt.com](https://www.omnivirt.com/) to upload content or create ad space.
 
-### Example Apps
+# Example Apps
 
 - [OmniVirt VR Player for iOS](https://github.com/OmniVirt/OmniVirtVRPlayer-iOS-Example)
 - [OmniVirt Ad Network for iOS](https://github.com/OmniVirt/OmniVirtAdNetwork-iOS-Example)
