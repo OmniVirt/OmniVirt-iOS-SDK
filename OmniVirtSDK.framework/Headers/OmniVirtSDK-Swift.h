@@ -174,7 +174,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_feature(modules)
 @import UIKit;
 @import Darwin;
-@import Foundation;
+@import WebKit;
 @import CoreGraphics;
 @import AVFoundation;
 #endif
@@ -287,10 +287,11 @@ SWIFT_CLASS("_TtC11OmniVirtSDK4VRAd")
 @end
 
 
-@class UIWebView;
+@class WKWebView;
+@class WKNavigationAction;
 
 SWIFT_CLASS("_TtC11OmniVirtSDK8VRPlayer")
-@interface VRPlayer : UIView <UIWebViewDelegate>
+@interface VRPlayer : UIView <WKNavigationDelegate>
 + (VRPlayer * _Nonnull)create SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -313,7 +314,7 @@ SWIFT_CLASS("_TtC11OmniVirtSDK8VRPlayer")
 - (void)switchSceneWithName:(NSString * _Nonnull)name;
 - (void)sendMessageWithType:(NSString * _Nonnull)type andValue:(id _Nullable)value;
 @property (nonatomic, strong) id <VRPlayerDelegate> _Nullable delegate;
-- (BOOL)webView:(UIWebView * _Nonnull)webView shouldStartLoadWithRequest:(NSURLRequest * _Nonnull)request navigationType:(UIWebViewNavigationType)navigationType SWIFT_WARN_UNUSED_RESULT;
+- (void)webView:(WKWebView * _Nonnull)webView decidePolicyForNavigationAction:(WKNavigationAction * _Nonnull)navigationAction decisionHandler:(void (^ _Nonnull)(WKNavigationActionPolicy))decisionHandler;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
 
