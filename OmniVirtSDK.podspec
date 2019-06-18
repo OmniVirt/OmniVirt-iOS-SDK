@@ -1,7 +1,7 @@
 working_path = Dir.pwd
 Pod::Spec.new do |spec|
   spec.name = "OmniVirtSDK"
-  spec.version = "1.9.1"
+  spec.version = "1.9.2"
   spec.summary = "360° Virtual Reality Embed Player and Monetization for iOS Apps"
   spec.homepage = "https://www.omnivirt.com"
   spec.license = { type: 'MIT', file: 'LICENSE' }
