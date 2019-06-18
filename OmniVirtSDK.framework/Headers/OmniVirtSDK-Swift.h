@@ -205,6 +205,7 @@ typedef SWIFT_ENUM(NSInteger, Feature, closed) {
 enum Mode : NSInteger;
 @class NSNumber;
 @protocol VRPlayerDelegate;
+@class VRPlayer;
 @class NSBundle;
 @class NSCoder;
 
@@ -218,6 +219,13 @@ SWIFT_CLASS("_TtC11OmniVirtSDK18FullscreenVRPlayer")
 - (void)dismissViewControllerAnimated:(BOOL)flag completion:(void (^ _Nullable)(void))completion;
 @property (nonatomic, readonly) UIInterfaceOrientationMask supportedInterfaceOrientations;
 @property (nonatomic, readonly) BOOL shouldAutorotate;
+@property (nonatomic, readonly, strong) VRPlayer * _Nullable player;
+@property (nonatomic) uint contentID;
+@property (nonatomic) BOOL autoplay;
+@property (nonatomic) enum Mode cardboard;
+@property (nonatomic, strong) NSNumber * _Nullable adSpaceIDNumber;
+@property (nonatomic, strong) id <VRPlayerDelegate> _Nullable delegate;
+@property (nonatomic, copy) NSString * _Nullable middleman;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -271,6 +279,8 @@ SWIFT_CLASS("_TtC11OmniVirtSDK4VRAd")
 - (BOOL)isCompleted SWIFT_WARN_UNUSED_RESULT;
 - (BOOL)isFailed SWIFT_WARN_UNUSED_RESULT;
 - (void)adStatusChangedWithAd:(VRAd * _Nonnull)ad andStatus:(enum AdState)status;
+@property (nonatomic, readonly) enum AdState status;
+@property (nonatomic, strong) id <VRAdDelegate> _Nullable delegate;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -281,6 +291,7 @@ SWIFT_CLASS("_TtC11OmniVirtSDK4VRAd")
 
 SWIFT_CLASS("_TtC11OmniVirtSDK8VRPlayer")
 @interface VRPlayer : UIView <WKNavigationDelegate>
++ (VRPlayer * _Nonnull)create SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_DEPRECATED_MSG("-init is unavailable");
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
@@ -293,6 +304,10 @@ SWIFT_CLASS("_TtC11OmniVirtSDK8VRPlayer")
 - (void)expand;
 - (void)collapse;
 - (void)back;
+- (void)skip;
+@property (nonatomic) enum Mode cardboard;
+@property (nonatomic) double audio;
+@property (nonatomic) enum Mode interface;
 - (void)enableWithFeature:(enum Feature)feature;
 - (void)disableWithFeature:(enum Feature)feature;
 - (void)switchSceneWithName:(NSString * _Nonnull)name;
@@ -327,12 +342,16 @@ SWIFT_PROTOCOL("_TtP11OmniVirtSDK16VRPlayerDelegate_")
 - (void)playerMessageReceived:(VRPlayer * _Nonnull)player withType:(NSString * _Nonnull)type andValue:(NSString * _Nonnull)json;
 @end
 
+@class AVCaptureOutput;
+@class AVCaptureConnection;
 
 SWIFT_CLASS("_TtC11OmniVirtSDK25VRQRScannerViewController")
 @interface VRQRScannerViewController : UIViewController <AVCaptureMetadataOutputObjectsDelegate>
++ (VRQRScannerViewController * _Nonnull)createWithDelegate:(id <VRQRScannerViewControllerDelegate> _Nonnull)delegate SWIFT_WARN_UNUSED_RESULT;
 - (void)viewDidLoad;
 - (void)viewWillAppear:(BOOL)animated;
 - (void)viewWillDisappear:(BOOL)animated;
+- (void)captureOutput:(AVCaptureOutput * _Null_unspecified)captureOutput didOutputMetadataObjects:(NSArray * _Null_unspecified)metadataObjects from:(AVCaptureConnection * _Null_unspecified)connection;
 @property (nonatomic, readonly) BOOL prefersStatusBarHidden;
 @property (nonatomic, readonly) UIInterfaceOrientationMask supportedInterfaceOrientations;
 - (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
